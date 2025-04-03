@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/top_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Верхняя кнопка" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/def_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.HeaderView">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alegreya_sans_sc_medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/title_subnet"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/back"
+                    style="@style/AppTheme_TButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@drawable/ic_left"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_default_margin">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ipAddress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_below="@id/macVendorSeparator"-->
+<!--                    android:gravity="end"-->
+<!--                    android:paddingBottom="5dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:textColor="@color/icsblue"-->
+<!--                    android:textIsSelectable="true" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/ipAddressSeparator"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1px"-->
+<!--                    android:layout_below="@id/ipAddress"-->
+<!--                    android:background="@color/icsblue" />-->
+
+                <EditText
+                    android:id="@+id/hostAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/wanHostHint"
+                    android:inputType="textUri"
+                    android:paddingBottom="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/icsblue" />
+
+                <TextView
+                    android:id="@+id/scanningWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hostAddress"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/scanningWarning"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/scanningDisclaimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scanningWarning"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/scanningDisclaimer"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/portListLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scanningDisclaimer"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/openPorts"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/icsblue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/portListLabel"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/portList"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:cacheColorHint="@color/black"
+                        android:scrollbarThumbVertical="@drawable/scrollbar"
+                        tools:ignore="NestedScrolling" />
+
+                    <LinearLayout
+                        style="?attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/scanWellKnownPorts"
+                            style="?attr/buttonBarButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button"
+                            android:minHeight="1dp"
+                            android:minWidth="1dp"
+                            android:text="@string/scanWellKnownPorts"
+                            android:textColor="@drawable/button_text"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/scanPortRange"
+                            style="?attr/buttonBarButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button"
+                            android:minHeight="1dp"
+                            android:minWidth="1dp"
+                            android:text="@string/scanPortRange"
+                            android:textColor="@drawable/button_text"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/colorPrimaryDark" />
+
+            <com.walhalla.netdiscover.NonScrollListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:cacheColorHint="@color/black"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="1dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F3F3" />
+
+</LinearLayout>

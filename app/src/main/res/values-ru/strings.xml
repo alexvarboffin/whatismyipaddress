@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <!--    <string name="app_name">Узнать IP адрес</string>-->
+    <string name="action_settings">Параметры</string>
+    <string name="action_about">О программе</string>
+    <string name="action_share">Поделиться</string>
+
+    <string name="label_connection_subtype">Подтип подключения:</string>
+    <string name="label_connection_type">Тип подключения:</string>
+    <string name="label_country">Страна:</string>
+    <string name="label_description">Описание:</string>
+    <string name="label_dns1">Сервер DNS1:</string>
+    <string name="label_dns2">Сервер DNS2:</string>
+    <string name="label_default_gateway">Шлюз по Умолчанию:</string>
+    <string name="label_hostname">Имя хоста:</string>
+    <string name="label_public_ip">Внешний IP-адрес:</string>
+    <string name="label_local_ip">Локальный IP:</string>
+    <string name="label_local_ipv6">Локальный IPv6-Адрес:</string>
+    <string name="label_mask">Маска:</string>
+    <string name="label_operator">Оператор:</string>
+    <string name="label_ssid">Имя SSID:</string>
+    <string name="menu_popup_copy">Копировать в буфер обмена</string>
+    <string name="page_connection">Детали подключения</string>
+    <string name="page_local">Локальный IP-адрес</string>
+    <string name="page_remote">Внешний IP-адрес</string>
+    <string name="err_not_available">Недоступно</string>
+    <string name="data_to_clipboard">Скопировано в буфер обмена: %s.</string>
+    <string name="action_copy">Копировать в буфер обмена</string>
+    <string name="label_city">Город:</string>
+    <string name="label_loc">Координаты сети:</string>
+    <string name="label_org">Провайдер:</string>
+    <string name="label_region">Регион:</string>
+    <string name="action_refresh">Обновить</string>
+    <string name="remove_battery_info">Удалить</string>
+    <string name="label_postal">Postal:</string>
+    <string name="label_timezone">Часовой пояс:</string>
+
+    <string name="hint_ip_address">IP-адрес или хост</string>
+    <string name="ping">Пинг</string>
+    <string name="wol">Wake-On-Lan</string>
+
+    <string name="title_subnet">Сканер подсети</string>
+    <string name="timeout">** Время ожидания **</string>
+    <string name="domain_name">Имя домена</string>
+    <string name="enter_domain">Введите домен</string>
+    <string name="internet_connectivity_problem">ПРОБЛЕМА С ИНТЕРНЕТ-ПОДКЛЮЧЕНИЕМ</string>
+
+    <string name="init_init">Загрузка</string>
+    <string name="initFail_configError">Ошибка конфигурации</string>
+    <string name="initFail_retry">Повторить</string>
+    <string name="init_selecting">Выбор сервера</string>
+    <string name="initFail_noServers">Извините! В данный момент нет доступных свободных серверов. Попробуйте позже через несколько секунд! В настоящее время у нас ограниченное количество серверов. В ближайшем будущем мы увеличим их количество. :)</string>
+
+
+    <!--    <string name="test_dl">Скачать</string>-->
+    <!--    <string name="test_ul">Загрузить</string>-->
+
+    <string name="test_dl">Входящее соединение</string>
+    <string name="test_ul">Исходящее соединение</string>
+
+
+    <string name="test_speedMeasure">Мбит/с</string>
+    <string name="test_ping">Пинг</string>
+    <string name="test_jitter">Джиттер</string>
+    <string name="test_timeMeasure">мс</string>
+    <string name="test_share">Поделиться результатом</string>
+    <string name="test_restart">Измерить ещё раз</string>
+    <string name="testFail_err">Произошла ошибка</string>
+    <string name="testFail_retry">Попробуйте снова</string>
+    <string name="privacy_open"><u>Конфиденциальность</u></string>
+    <string name="privacy_close"><u>Назад</u></string>
+
+
+    <string name="serverSelect_message">Выберите сервер</string>
+
+    <string name="start">Тестировать</string>
+
+    <!--    <string name="copied_to_clipboard">скопировано в буфер обмена</string>-->
+
+    <string name="title_speed_test">Тест скорости Интернет соединения</string>
+
+    <string name="my_ip">НАЖМИТЕ ЗДЕСЬ, ЧТОБЫ ПОСМОТРЕТЬ СОБСТВЕННЫЙ IP</string>
+    <string name="hint_ipOrWebAddress">IP ИЛИ ВЕБ-АДРЕС…</string>
+
+    <string name="look_ip_or_domain">Поиск IP или домена</string>
+    <string name="misc_tools">Разные инструменты</string>
+    <string name="other_useful_tools">Другие полезные инструменты</string>
+
+    <string name="subnet_devices_connected_to_your_network">Устройства Подключенные к вашей сети</string>
+    <string name="titleWakeonlan">WakeOnLan</string>
+    <string name="whois">Whois</string>
+    <string name="ip_netblocks">Блоки IP-адресов</string>
+
+    <string name="value_yes">ДА</string>
+    <string name="value_no">НЕТ</string>
+
+    <string name="ping_hint">IP или URL для пинга</string>
+    <string name="title_ping">Ping</string>
+    <string name="hint_enter_ip">Введите IP</string>
+
+    <string name="domain_info">Информация о домене</string>
+    <string name="domain">Домен</string>
+    <string name="domain_id">Идентификатор домена в регистратуре</string>
+    <string name="domain_status">Статус домена</string>
+    <string name="domain_name_servers">Серверы имен</string>
+
+
+    <string name="dates_label">Даты</string>
+    <string name="domain_registration_expiry">Срок действия регистрации у регистратуры</string>
+    <string name="domain_update_date">Дата обновления</string>
+    <string name="domain_creation_date">Дата создания</string>
+    <string name="registration_info">Информация о регистраторе</string>
+    <string name="registrar_domain">Домен</string>
+    <string name="registrar_iana_code">Код IANA</string>
+    <string name="registrar_abuse_email">Адрес электронной почты контактного лица по жалобам на злоупотребления</string>
+    <string name="registrar_abuse_phone">Телефон контактного лица по жалобам на злоупотребления</string>
+    <string name="dnssec_signed_info">Информация о DNSSEC</string>
+    <string name="dnssec_signed_zone">Зона подписана</string>
+    <string name="dnssec_authoritative_servers">Авторитативные серверы</string>
+    <string name="url_adresses">URL-адреса</string>
+    <string name="registry_server_url">URL-адрес сервера регистратуры</string>
+    <string name="rdap_database_update_date">Дата последнего обновления на основании базы данных RDAP регистратуры</string>
+    <string name="registrar_server_url">URL-адрес сервера регистратора</string>
+    <string name="notifications_notes">Уведомления и примечания</string>
+
+    <string name="notifications_notes_notifications">Уведомления:</string>
+    <string name="root_whois">IANA WHOIS</string>
+
+    <string name="iana_whois">Сервис IANA WHOIS</string>
+    <string name="iana_hint">Сервис IANA WHOIS предоставляется с использованием протокола WHOIS на порту 43. Принимаемые аргументы запроса: доменные имена, IP-адреса и AS-номера.</string>
+    <string name="whois_timeoutHint">IPv4, IPv6, доменное имя или адрес электронной почты</string>
+
+    <!--    <string name="rdap_timeoutHint">Введите доменное имя или ресурс интернет-номера (IP-сеть или ASN)</string>-->
+    <string name="rdap_timeoutHint">Укажите доменное имя или ресурс нумерации Интернета (IP-сеть или номер автономной системы, ASN)</string>
+
+
+    <string name="enter_a_value">Введите значение</string>
+    <string name="no_data_found">Данные не найдены</string>
+
+    <string name="dashboard_not_wifi">НЕ ПОДКЛЮЧЕНО К WI-FI</string>
+    <string name="dashboard_signal_strength">Уровень сигнала</string>
+    <string name="dashboard_percentage">Процент</string>
+    <string name="description_logo">Логотип</string>
+    <string name="welcome">ДОБРО ПОЖАЛОВАТЬ</string>
+    <string name="permission_not_granted">РАЗРЕШЕНИЕ НЕ ПРЕДОСТАВЛЕНО</string>
+    <string name="action_whois">Whois</string>
+<!--    <string name="action_titleDnsLookupWhoisxml">DNS-поиск</string>-->
+    <string name="action_title_ip_netblocks">Блоки IP-адресов</string>
+    <string name="err_check_one_types">ВЫБЕРИТЕ ТИП ДАННЫХ</string>
+
+    <string name="dashboard_item_title_wifi_enabled">Включен Wi-Fi</string>
+    <string name="dashboard_item_title_p2p_support">Поддержка P2P</string>
+    <string name="dashboard_item_title_tdls_support">Поддержка TDLS</string>
+    <string name="q_copy_value_to_clipboard">Скопировать значение в буфер обмена?</string>
+    <string name="check_connectivity">Проверить подключение</string>
+    <string name="link_speed">Скорость соединения</string>
+    <string name="public_ip">Публичный IP</string>
+    <string name="download_speed">Скорость загрузки</string>
+    <string name="upload_speed">Скорость загрузки</string>
+    <string name="connection_info_amp_stats"><![CDATA[Информация о соединении и статистика]]></string>
+    <string name="up_down_stream_grpah">График потока вверх/вниз</string>
+
+    <string name="down_stream_kbps">Скорость загрузки (кБит/с)</string>
+    <string name="up_stream_kbps">Скорость выгрузки (кБит/с)</string>
+    <string name="action_title_rdap">RDAP</string>
+
+    <string name="go_back">НАЗАД</string>
+
+    <string name="server_name">SERVER NAME</string>
+    <string name="jitter">JITTER</string>
+    <string name="dload">DLOAD</string>
+    <string name="uload">ULOAD</string>
+    <string name="ip_address_isp_name_distance">IP ADDRESS - ISP NAME (DISTANCE)</string>
+    <string name="menu_popup_open_google_map">Open Google Maps</string>
+
+    <string name="action_title_websniffer">WebSniffer</string>
+    <string name="url_label">URL веб-страницы. http/https:</string>
+    <string name="request_type_label">Тип запроса:</string>
+    <string name="http_version_label">Версия HTTP:</string>
+    <string name="user_agent_label">User Agent:</string>
+    <string name="submit_button">Отправить</string>
+    <string name="share_program_text">Поделиться этой программой:</string>
+    <string name="share_button_text">Поделиться</string>
+    <string name="request_header_label">Заголовок HTTP-запроса</string>
+    <string name="request_header_text">Соединение с %1$s на порту %2$d… %3$s\n\n</string>
+    <string name="response_header_label">Заголовок HTTP-ответа</string>
+    <string name="hint_enter_url">Введите URL</string>
+
+    <string name="action_title_port_scanner">Сканер портов</string>
+    <string name="action_button_scan">Сканировать</string>
+    <!--    <string name="port_scan">Сканирование портов</string>-->
+
+    <string name="menu_port_scanning">Сканер портов</string>
+    <string name="menu_title_rdns_lookup">Обратный запрос DNS (rDNS)</string>
+    <string name="action_button_lookup">LOOKUP</string>
+    <string name="action_title_rdns_lookup">rDNS</string>
+    <string name="label_ip_address">Ip Address</string>
+    <!--    -->
+
+    <string name="min_port_number">Минимальный номер порта</string>
+    <string name="max_port_no_65535">Максимальный номер порта (65535)</string>
+    <string name="hint_min_port_number">Минимальный номер порта</string>
+    <string name="hint_max_port_number">Максимальный номер порта</string>
+    <string name="time_out_millisecond">Тайм-аут (в миллисекундах)</string>
+    <string name="hint_timeout">Тайм-аут</string>
+    <string name="hint_limit">Лимит</string>
+    <string name="hint_enter_timeout">Введите тайм-аут</string>
+    <string name="hint_enter_limit">Введите лимит</string>
+    <string name="action_button_ping">PING</string>
+    <string name="limit">Лимит</string>
+    <string name="timeout_millisecond">Тайм-аут\n(в миллисекундах)</string>
+    <string name="ip_router_or_url">IP, роутер или URL</string>
+    <string name="ip_asn_autonomous_system_number_org">IP, ASN (номер автономной системы), ORG</string>
+    <string name="hint_enter_ip_asn_org">Введите IP, ASN, ORG</string>
+    <string name="optional_fields">--------- ДОПОЛНИТЕЛЬНЫЕ ПОЛЯ ---------</string>
+    <string name="mask_for_ip_only_0_128">Маска только для IP (0–128)</string>
+    <string name="limit_1_1000">Лимит (1–1000)</string>
+    <string name="enter_mask">Введите маску</string>
+    <string name="enter_limit">Введите лимит</string>
+    <string name="title_iana_whois">IANA WHOIS</string>
+    <string name="invalid_ip_address">Invalid Ip Address</string>
+    <string name="hint_enter_mac">MAC address</string>
+    <string name="label_mac">MAC address</string>
+    <string name="action_title_ipconverter">IP Converter</string>
+    <string name="action_button_convert">Рассчитать</string>
+    <string name="hint_enter_mask">Subnet Mask</string>
+
+    <string name="action_calculate">Рассчитать</string>
+    <string name="title_IPCalculator">IP Калькулятор</string>
+    <string name="ip_address">IP-адрес:</string>
+    <string name="subnet_mask">Маска подсети:</string>
+    <string name="network_address">Адрес сети:</string>
+    <string name="broadcast_address">Широковещательный адрес:</string>
+    <string name="prefix_length">Длина префикса:</string>
+    <string name="wildcard_mask">Маска обратных битов:</string>
+    <string name="cidr">CIDR:</string>
+    <string name="available_hosts">Доступные хосты:</string>
+    <string name="titleSSLExamination">SSL Examination</string>
+
+
+    <string name="cert_not_yet_valid">Сертификат еще не вступил в силу</string>
+    <string name="cert_has_expired">Срок действия сертификата истек</string>
+
+    <string name="cert_valid">Срок действия сертификата действителен</string>
+    <string name="i_accept_terms_and_conditions">Я принимаю Условия и Положения</string>
+
+    <string name="onboard_action_next">Далее</string>
+    <string name="onboard_action_finish">GOT IT</string>
+    <string name="provideallfields">Provide all fields</string>
+    <string name="titleGeoPing">GeoPing</string>
+    <string name="action_button_geoping">PING</string>
+
+
+    <string name="error_msg_firebase">Пожалуйста, предоставьте разрешение на передачу идентификаторов устройства</string>
+    <string name="deny_consent">Отказаться от согласия (отключение)</string>
+    <string name="give_consent">Предоставить согласие (включение)</string>
+
+    <string name="onboard2PrivacyPolicy">Для получения дополнительной информации, пожалуйста, ознакомьтесь с нашей\n<u>Политикой конфиденциальности</u></string>
+    <string name="error_msg_terms">Пожалуйста, сначала примите условия и положения</string>
+
+    <string name="onboard_1_title">Добро пожаловать!</string>
+    <string name="onboard_1_description">Первоначальная настройка.\nДавайте начнем!</string>
+
+    <string name="onboard2title">Мы используем идентификаторы устройств для анализа работы приложения.</string>
+    <string name="onboard2text">Нам необходимо ваше согласие на передачу этой информации в Firebase, чтобы лучше понимать наших пользователей и создавать лучшие приложения.</string>
+
+    <string name="onboard_3_title">Готово!\nСпасибо!</string>
+    <string name="onboard_3_description">Это приложение настроено и готово к использованию.</string>
+    <string name="hint_enter_ip_or_host">Введите IP или хост</string>
+    <string name="min_port_no_cannot_be_greater">Минимальный номер порта не может быть больше.</string>
+
+</resources>

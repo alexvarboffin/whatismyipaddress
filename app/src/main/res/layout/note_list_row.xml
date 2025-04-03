@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp">
+
+
+    <!--#371F8D-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAEAEA"
+        tools:ignore="UselessParent">
+
+        <View
+            android:id="@+id/dot"
+            android:layout_width="8dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:theme="@style/AppTheme.Dotter"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textColor="@color/colorAccent"
+            tools:text="0" />
+
+
+        <LinearLayout
+            android:paddingRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/dot"
+            android:layout_toRightOf="@id/dot"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="0dp">
+
+
+            <TextView
+                android:id="@+id/tv_label"
+                style="@style/HeaderGroupText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Charless" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/layout_group_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="127.0.0.1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

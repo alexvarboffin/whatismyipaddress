@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <item android:drawable="@drawable/button_pressed" android:state_pressed="true" />-->
+    <!--    <item android:drawable="@drawable/button_focused" android:state_focused="true" />-->
+    <!--    <item android:drawable="@drawable/button_normal" />-->
+
+    <!--    CRASHED-->
+    <!--    <item android:color="@color/gateway_pressed" android:drawable="@null" android:state_pressed="true" />-->
+    <!--    <item android:color="@color/gateway_pressed" android:drawable="@null" android:state_focused="true" />-->
+    <!--    <item android:color="@color/gateway_normal" android:drawable="@null" />-->
+
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gateway_pressed" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gateway_pressed" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gateway_normal" />
+        </shape>
+    </item>
+
+</selector>

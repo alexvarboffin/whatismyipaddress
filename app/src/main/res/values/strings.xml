@@ -1,0 +1,344 @@
+<resources>
+
+    <string name="app_name" translatable="false">What is My IP Address?</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_share">Share</string>
+
+    <string name="label_connection_subtype">Connection subtype:</string>
+    <string name="label_connection_type">Connection type:</string>
+    <string name="label_country">Country:</string>
+    <string name="label_description">Description:</string>
+    <string name="label_dns1">DNS1:</string>
+    <string name="label_dns2">DNS2:</string>
+    <string name="label_default_gateway">Default Gateway:</string>
+    <string name="label_hostname">Hostname:</string>
+    <string name="label_public_ip">Public IP address:</string>
+    <string name="label_local_ip">Local IP:</string>
+    <string name="label_local_ipv6">Local IPv6 Address:</string>
+    <string name="label_mask">Mask:</string>
+    <string name="label_operator">Operator:</string>
+    <string name="label_ssid">SSID:</string>
+    <string name="menu_popup_copy">Copy to clipboard</string>
+    <string name="page_connection">Connection details</string>
+    <string name="page_local">Local IP address</string>
+    <string name="page_remote">Remote IP address</string>
+    <string name="err_not_available">Not available</string>
+    <string name="data_to_clipboard">Copied to clipboard: %s.</string>
+    <string name="action_copy">Copy</string>
+    <string name="label_city">City:</string>
+    <string name="label_loc">Loc:</string>
+    <string name="label_org">Org:</string>
+    <string name="label_region">Region:</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="remove_battery_info">Remove</string>
+
+    <string name="label_postal">Postal:</string>
+    <string name="label_timezone">Timezone:</string>
+
+
+    <!--    IP tools-->
+    <string name="hint_ip_address">IP Address or Hostname</string>
+    <string name="ping">Ping</string>
+    <string name="wol">Wake-On-Lan</string>
+
+
+    <string name="title_subnet">Subnet Devices</string>
+    <string name="timeout">** Timeout **</string>
+    <string name="domain_name">Domain Name</string>
+    <string name="enter_domain">Enter domain</string>
+    <string name="internet_connectivity_problem">INTERNET CONNECTIVITY PROBLEM</string>
+
+    <string name="init_init">Loading</string>
+    <string name="initFail_configError">Configuration error</string>
+    <string name="initFail_retry">Retry</string>
+    <string name="init_selecting">Selecting server</string>
+    <string name="initFail_noServers">      Sorry! No free server available at moment, Please try later in a few seconds! Currently we have limited numbers of servers. We will increase numbers in near future.:)     </string>
+
+    <string name="serverSelect_message">Select a server</string>
+    <string name="start">Start</string>
+    <string name="test_dl">Download</string>
+    <string name="test_ul">Upload</string>
+    <string name="test_speedMeasure">Mbps</string>
+    <string name="test_ping">Ping</string>
+    <string name="test_jitter">Jitter</string>
+    <string name="test_timeMeasure">ms</string>
+    <string name="test_share">Share result</string>
+    <string name="test_restart">New test</string>
+    <string name="testFail_err">An error occurred</string>
+    <string name="testFail_retry">Try again</string>
+    <string name="privacy_open"><u>Privacy</u></string>
+    <string name="privacy_close"><u>Back</u></string>
+
+    <!--    <string name="not_wifi">NOT CONNECTED TO WIFI</string>-->
+    <string name="ping_hint">IP or URL to ping</string>
+    <!--    <string name="copied_to_clipboard">copied to clipboard</string>-->
+    <string name="title_ping">Ping</string>
+    <string name="title_speed_test">Speed Test</string>
+    <string name="hint_enter_ip">Enter IP</string>
+
+    <string name="my_ip">PRESS HERE TO LOOK OWN IP</string>
+    <string name="hint_ipOrWebAddress">IP Or WEB ADDRESS..</string>
+
+    <string name="logo_inapp_link" translatable="false">https://google.com</string>
+
+    <string name="www_google" translatable="false">www.google.com</string>
+    <string name="look_ip_or_domain">Look IP Or Domain</string>
+    <string name="www_google_com" translatable="false">www.google.com</string>
+
+    <string name="misc_tools">Misc. Tools</string>
+    <string name="other_useful_tools">Other Useful Tools</string>
+    <string name="menu_port_scanning">Port Scanning</string>
+    <string name="subnet_devices_connected_to_your_network">Subnet Devices/ Connected to your network</string>
+    <string name="titleWakeonlan">WakeOnLan</string>
+    <string name="whois">Whois</string>
+    <string name="ip_netblocks">IP Netblocks</string>
+
+    <string name="dashboard_not_wifi">NOT CONNECTED TO WIFI</string>
+    <string name="dashboard_signal_strength">Signal Strength</string>
+    <string name="dashboard_percentage">Percentage</string>
+    <string name="description_logo">Logo</string>
+    <string name="welcome">WELCOME</string>
+    <string name="permission_not_granted">PERMISSION NOT GRANTED</string>
+    <string name="action_whois">Whois</string>
+
+    <string name="splash_slogan" translatable="false"><![CDATA[Network & internet]]></string>
+
+
+    <string name="channel_name" translatable="false">WmIp</string>
+    <string name="channel_desc" translatable="false">What is My IP Address</string>
+    <string name="value_yes">YES</string>
+    <string name="value_no">NO</string>
+
+    <string name="dates_label">Dates</string>
+    <string name="domain_info">Domain Information</string>
+    <string name="domain">Domain</string>
+    <string name="domain_id">Domain Identifier in the Registry</string>
+    <string name="domain_status">Domain Status</string>
+    <string name="domain_name_servers">Name Servers</string>
+    <string name="domain_registration_expiry">Registration Expiry Date at the Registry</string>
+    <string name="domain_update_date">Update Date</string>
+    <string name="domain_creation_date">Creation Date</string>
+    <string name="registration_info">Registrar Information</string>
+    <string name="registrar_domain">Domain</string>
+    <string name="registrar_iana_code">IANA Code</string>
+    <string name="registrar_abuse_email">Abuse Contact Email Address</string>
+    <string name="registrar_abuse_phone">Abuse Contact Phone Number</string>
+    <string name="dnssec_signed_info">DNSSEC Information</string>
+    <string name="dnssec_signed_zone">Zone Signed</string>
+    <string name="dnssec_authoritative_servers">Authoritative Servers</string>
+    <string name="url_adresses">URL Addresses</string>
+    <string name="registry_server_url">Registry Server URL</string>
+    <string name="rdap_database_update_date">Last Update Date Based on RDAP Registry Database</string>
+    <string name="registrar_server_url">Registrar Server URL</string>
+    <string name="notifications_notes">Notifications and Notes</string>
+
+    <string name="notifications_notes_notifications">Notifications:</string>
+    <string name="iana_whois">IANA WHOIS Service</string>
+    <string name="iana_hint">The IANA WHOIS Service is provided using the WHOIS protocol on port 43. This web gateway will query this server and return the results. Accepted query arguments are domain names, IP addresses and AS numbers.</string>
+    <string name="whois_timeoutHint">IPv4, IPv6, Domain Name or Email Address</string>
+
+
+    <!--    https://lookup.icann.org/en-->
+    <string name="rdap_timeoutHint">Enter a domain name or an Internet number resource (IP Network or ASN)</string>
+
+
+    <string name="enter_a_value">Enter a value</string>
+    <string name="root_whois">IANA WHOIS</string>
+    <string name="no_data_found">No Data Found</string>
+
+
+    <!--    DNS Lookup (whoisxmlapi)-->
+
+    <string name="label_titleDnsLookupWhoisxml" translatable="false">DNS Lookup</string>
+    <string name="action_titleDnsLookupWhoisxml" translatable="false">DNS Lookup</string>
+
+    <string name="action_title_ip_netblocks">IP Netblocks</string>
+    <string name="err_check_one_types">CHECK ONE TYPE</string>
+    <string name="dashboard_item_title_wifi_enabled">Is Wifi Enabled</string>
+    <string name="dashboard_item_title_p2p_support">Is P2p Supported</string>
+    <string name="dashboard_item_title_tdls_support">Is Tdls Supported</string>
+    <string name="q_copy_value_to_clipboard">Copy Value to Clipboard?</string>
+    <string name="check_connectivity">Check Connectivity</string>
+    <string name="link_speed">Link Speed</string>
+    <string name="public_ip">Public IP</string>
+    <string name="download_speed">Download Speed</string>
+    <string name="upload_speed">Upload Speed</string>
+    <string name="connection_info_amp_stats"><![CDATA[Connection Info & Stats]]></string>
+    <string name="up_down_stream_grpah">Up/Down Stream Grpah</string>
+    <string name="down_stream_kbps">Down Stream (KBPS)</string>
+    <string name="up_stream_kbps">Up Stream (KBPS)</string>
+    <string name="action_title_rdap">RDAP</string>
+    <string name="go_back">GO BACK</string>
+    <string name="server_name">SERVER NAME</string>
+    <string name="jitter">JITTER</string>
+    <string name="dload">DLOAD</string>
+    <string name="uload">ULOAD</string>
+    <string name="ip_address_isp_name_distance">IP ADDRESS - ISP NAME (DISTANCE)</string>
+
+    <string-array name="http_versions">
+        <!--        <item>HTTP/1.0</item>-->
+        <item>HTTP/1.1</item>
+        <!--        <item>HTTP/2.0</item>-->
+        <!--        <item>h2_prior_knowledge</item>-->
+
+    </string-array>
+
+    <!-- User Agents -->
+    <string-array name="user_agents">
+        <item>WhatIsMyIPAddress</item>
+        <item>Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)</item>
+        <item>Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)</item>
+        <item>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1</item>
+        <item>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3</item>
+        <item>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_4) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</item>
+        <item>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7</item>
+        <item>Mozilla/4.8 [en] (Windows NT 6.0; U)</item>
+        <item>Opera/9.20 (Windows NT 6.0; U; en)</item>
+        <item>Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</item>
+        <item>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0</item>
+    </string-array>
+
+    <string name="action_title_websniffer">WebSniffer</string>
+    <string name="url_label">Webpage URL. http/https:</string>
+    <string name="request_type_label">Request type:</string>
+    <string name="http_version_label">HTTP version:</string>
+    <string name="user_agent_label">User agent:</string>
+    <string name="submit_button">Submit</string>
+    <string name="share_program_text">Share this program:</string>
+    <string name="share_button_text">Share</string>
+    <string name="request_header_label">HTTP Request Header</string>
+    <string name="request_header_text">Connect to %1$s on port %2$d… %3$s\n\n</string>
+    <string name="response_header_label">HTTP Response Header</string>
+    <string name="hint_enter_url">Enter URL</string>
+
+    <string name="method_head" translatable="false">HEAD</string>
+    <string name="method_post" translatable="false">POST</string>
+    <string name="method_get" translatable="false">GET</string>
+    <string name="menu_popup_open_google_map">Open Google Maps</string>
+    <string name="action_title_port_scanner">Port Scanner</string>
+    <string name="action_button_scan">SCAN</string>
+    <string name="menu_title_rdns_lookup">Reverse DNS Lookup</string>
+    <string name="action_button_lookup">LOOKUP</string>
+    <string name="action_title_rdns_lookup">rDNS</string>
+
+    <string name="digitsIpOrHost" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.</string>
+    <string name="rdapDigits" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.</string>
+    <string name="ipDigits" translatable="false">0123456789.</string>
+
+    <string name="label_ip_address">Ip Address</string>
+    <string name="min_port_number">Min Port Number</string>
+    <string name="max_port_no_65535">Max Port No. (65535)</string>
+    <string name="hint_min_port_number">Min Port Number</string>
+    <string name="hint_max_port_number">Max Port Number</string>
+    <string name="time_out_millisecond">Time Out (Millisecond)</string>
+    <string name="hint_timeout">Timeout</string>
+    <string name="hint_limit">Limit</string>
+    <string name="hint_enter_timeout">Enter Timeout</string>
+    <string name="hint_enter_limit">Enter Limit</string>
+    <string name="action_button_ping">PING</string>
+    <string name="limit">LIMIT</string>
+    <string name="timeout_millisecond">TIMEOUT (Millisecond)</string>
+    <string name="ip_router_or_url">ip, router or url</string>
+    <string name="ip_asn_autonomous_system_number_org">IP, ASN (autonomous system number), ORG</string>
+    <string name="hint_enter_ip_asn_org">Enter ip, asn, org</string>
+    <string name="optional_fields">--------- OPTIONAL FIELDS ---------</string>
+    <string name="mask_for_ip_only_0_128">Mask for IP Only (0–128)</string>
+    <string name="limit_1_1000">LIMIT (1–1000)</string>
+    <string name="enter_mask">Enter Mask</string>
+    <string name="enter_limit">Enter Limit</string>
+    <string name="title_iana_whois">IANA WHOIS</string>
+    <string name="invalid_ip_address">Invalid Ip Address</string>
+    <string name="hint_enter_mac">MAC address</string>
+    <string name="label_mac">MAC address</string>
+    <string name="action_title_ipconverter">IP Converter</string>
+    <string name="action_button_convert">CALCULATE</string>
+
+    <!--    <string name="port_scan">Port Scan</string>-->
+
+
+    <string name="ip_address">IP Address:</string>
+    <string name="subnet_mask">Subnet Mask:</string>
+    <string name="network_address">Network Address:</string>
+    <string name="broadcast_address">Broadcast Address:</string>
+    <string name="prefix_length">Prefix Length:</string>
+    <string name="wildcard_mask">Wildcard Mask:</string>
+    <string name="cidr">CIDR:</string>
+    <string name="available_hosts">Available Hosts:</string>
+    <string name="hint_enter_mask">Subnet Mask</string>
+    <string name="action_calculate">CALCULATE</string>
+    <string name="title_IPCalculator">IP Calculator</string>
+    <string name="titleSSLExamination">SSL Examination</string>
+
+    <string name="cert_not_yet_valid">Certificate not yet valid</string>
+    <string name="cert_has_expired">Certificate has expired</string>
+    <string name="cert_valid">Certificate expiration date is valid</string>
+    <string name="i_accept_terms_and_conditions">I accept Terms and Conditions</string>
+
+    <string name="onboard_action_next">Next</string>
+    <string name="onboard_action_finish">GOT IT</string>
+
+
+    <string name="onboard_1_title">Welcome!</string>
+    <string name="onboard_1_description">First time setup.\nLet\`s begin!</string>
+
+    <string name="onboard_2_title" translatable="false">What is My IP Address?</string>
+    <string name="onboard_2_description" translatable="false">Firebase Analytics\nData collection consent</string>
+
+    <string name="onboard_3_title">Done!\nThank You!</string>
+    <string name="onboard_3_description">This app is configured and ready to use.</string>
+
+
+    <string name="onboard2title">We use device identifiers to analyse our traffic.</string>
+    <string name="onboard2text">We need your consent to send this information to Firebase in order to better understand our users, enabling us to create better Apps.</string>
+
+
+    <string name="onboard2PrivacyPolicy">For more information please read our\n<u>Privacy Policy</u></string>
+    <string name="error_msg_terms">Please accept terms and conditions first</string>
+
+    <string name="error_msg_firebase">Please express your consent</string>
+    <string name="deny_consent">Deny Consent (Opt-out)</string>
+    <string name="give_consent">Give Consent (Opt-in)</string>
+
+    <string name="provideallfields">Provide all fields</string>
+    <string name="titleGeoPing">GeoPing</string>
+    <string name="action_button_geoping">PING</string>
+    <string name="hint_enter_ip_or_host">Enter IP or Host</string>
+    <string name="min_port_no_cannot_be_greater">Min Port no. cannot be greater.</string>
+
+    <string name="find_subnet_devices">Find Subnet Devices</string>
+    <string name="scanning_port_range">Scanning Port %1$d to %2$d</string>
+    <string name="action_titleWanhostScanner">WAN Host Scanner</string>
+    <string name="domain_com">domain.com</string>
+    <string name="action_button_findsubdomain">Find Subdomain</string>
+    <string name="scantypeComplete">Complete</string>
+    <string name="scantypeQuick">Quick</string>
+    <string name="titleSubdomainFinder">Subdomain Finder</string>
+
+
+    <string name="itemCertIssuerName">Issuer Name:</string>
+    <string name="itemCertCommonName">Common Name:</string>
+    <string name="itemCertNameValue">Name Value:</string>
+    <string name="itemCertNotBefore">Not Before:</string>
+    <string name="itemCertNotAfter">Not After:</string>
+    <string name="itemCertID">ID:</string>
+    <string name="itemCertResultCount">Result Count:</string>
+    <string name="itemCertSerialNumber">SerialNumber:</string>
+    <string name="itemCertEntryTimestamp">Entry Timestamp:</string>
+
+
+    <string name="actionCopyCommonName">Copy CommonName</string>
+    <string name="actionCopyNameValue">Copy NameValue</string>
+
+
+    <string name="actionCopyAllCommonName">Copy All CommonNames</string>
+    <string name="actionCopyAllNameValue">Copy All NameValues</string>
+    <string name="actionCopyAllCommonNameAndNameValue">Copy All CommonNames &amp; NameValues</string>
+
+    <string name="actionShareAllCommonName">Share All CommonNames</string>
+    <string name="actionShareAllNameValue">Share All NameValues</string>
+    <string name="actionShareAllCommonNameAndNameValue">Share All CommonNames &amp; NameValues</string>
+    <string name="rdap_dialog_title_example">Example:</string>
+
+</resources>

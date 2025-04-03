@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_world_02"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/headerView"
+                style="@style/AppTheme.HeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.HeaderView">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alegreya_sans_sc_medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/look_ip_or_domain"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--                 111 style="@style/AppTheme_TButton"-->
+                <ImageView
+                    android:id="@+id/speedTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:contentDescription="@null"
+                    android:padding="0dp"
+                    app:srcCompat="@drawable/ic_speed_test_wh"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ipView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerView"
+                android:layout_margin="5dp"
+                android:background="@drawable/search_bg"
+                android:padding="10dp">
+
+
+                <!--                android:layout_marginStart="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <EditText
+                    android:id="@+id/ip"
+                    style="@style/AppTheme_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toStartOf="@+id/search"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/amaranth"
+                    android:hint="@string/hint_ipOrWebAddress"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@string/www_google_com"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@null"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/ic_zoom" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/myIp"
+                style="@style/MyIpActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ipView"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/actor"
+                android:text="@string/my_ip"
+                android:textStyle="italic" />
+
+            <com.walhalla.netdiscover.NonScrollListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myIp"
+                android:layout_marginTop="10dp"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="1dp"
+                android:scrollbarStyle="insideOverlay" />
+
+            <RelativeLayout
+                android:id="@+id/mapView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listView"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:alpha=".1"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_global" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.ThreeBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        tools:visibility="visible" />
+
+</RelativeLayout>

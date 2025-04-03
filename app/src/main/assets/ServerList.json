@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Speedtest Inexio",
+    "server": "https://speedtest.inexio.net/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Threema",
+    "server": "https://threema.ch/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Sppedtest Tennet",
+    "server": "http://speed.tennet.com.ua/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Sppedtest Kievnet",
+    "server": "http://kievnet.ua/speedtest/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Erwanastro",
+    "server": "//speedtest.erwanastro.xyz/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Totisp",
+    "server": "//speedtest.totisp.net/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Hitutoracdm",
+    "server": "https://speedtest.hitutoracdm.com/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Darnet",
+    "server": "http://speedtest.darnet.ru/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Kyivlink",
+    "server": "https://test.kyivlink.com/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  },
+  {
+    "name": "Speedtest Gvtc",
+    "server": "http://speedtest.gvtc.com/",
+    "dlURL": "garbage.php",
+    "ulURL": "empty.php",
+    "pingURL": "empty.php",
+    "getIpURL": "getIP.php"
+  }
+]

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/top_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Верхняя кнопка" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/def_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.HeaderView">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alegreya_sans_sc_medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/title_ping"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/back"
+                    style="@style/AppTheme_TButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@drawable/ic_left"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_default_margin">
+
+
+                <TableLayout
+                    android:id="@+id/deviceInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/deviceMacAddressLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/macAddress"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/deviceMacAddress"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/deviceMacVendorLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/macVendor"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/deviceMacVendor"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/internalIpAddressLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/internalIpLabel"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/internalIpAddress"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/externalIpAddressLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/externalIpLabel"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/externalIpAddress"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="@string/fetching"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/signalStrengthLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/signalLabel"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/signalStrength"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/ssidLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/ssid"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/ssid"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/bssidLabel"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:text="@string/bssid"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/bssid"
+                            style="@style/DeviceInfoItem"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/icsblue"
+                            android:textIsSelectable="true" />
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/ping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/amaranth"
+                android:padding="4dp"
+                android:text="@string/action_button_ping"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:targetApi="lollipop" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/colorPrimaryDark" />
+
+
+            <!--            android:cacheColorHint="@color/black"-->
+
+            <com.walhalla.netdiscover.NonScrollListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="1dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- android:animateLayoutChanges="true"-->
+
+    <FrameLayout
+        android:id="@+id/bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F3F3" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+<!--    <string name="app_name">Визначити свою IP адресу</string>-->
+    <string name="action_settings">Параметри</string>
+    <string name="action_about">Про</string>
+    <string name="action_share">Поділитися</string>
+
+    <string name="label_connection_subtype">Підтип підключення:</string>
+    <string name="label_connection_type">Тип підключення:</string>
+    <string name="label_country">Країна:</string>
+    <string name="label_description">Опис:</string>
+    <string name="label_dns1">Сервер DNS1:</string>
+    <string name="label_dns2">Сервер DNS2:</string>
+    <string name="label_default_gateway">Шлюз:</string>
+    <string name="label_hostname">Ім\'я:</string>
+    <string name="label_public_ip">Зовнiшнiй IP-адрес:</string>
+    <string name="label_local_ip">Локальний IP:</string>
+    <string name="label_local_ipv6">Локальний IPv6-Адресу:</string>
+    <string name="label_mask">Маска:</string>
+    <string name="label_operator">Оператор:</string>
+    <string name="label_ssid">SSID:</string>
+    <string name="menu_popup_copy">Копіювати в буфер обміну</string>
+    <string name="page_connection">Деталі підключення</string>
+    <string name="page_local">Локальний IP-адрес</string>
+    <string name="page_remote">Зовнiшнiй IP-адрес</string>
+    <string name="err_not_available">Не доступний</string>
+    <string name="data_to_clipboard">Скопійовано в буфер обміну: %s.</string>
+    <string name="action_copy">Копія</string>
+    <string name="label_city">Місто:</string>
+    <string name="label_loc">Лок:</string>
+    <string name="label_org">Провайдер:</string>
+    <string name="label_region">Регіон:</string>
+    <string name="action_refresh">Оновити</string>
+    <string name="remove_battery_info">Видалити</string>
+    <string name="label_postal">Postal:</string>
+    <string name="label_timezone">Timezone:</string>
+    <string name="internet_connectivity_problem">INTERNET CONNECTIVITY PROBLEM</string>
+    <string name="serverSelect_message">Select a server</string>
+    <string name="start">Start</string>
+<!--    <string name="copied_to_clipboard">copied to clipboard</string>-->
+    <string name="title_speed_test">Speed Test</string>
+    <string name="my_ip">PRESS HERE TO LOOK OWN IP</string>
+    <string name="hint_ipOrWebAddress">IP Or WEB ADDRESS..</string>
+    <string name="look_ip_or_domain">Look IP Or Domain</string>
+    <string name="misc_tools">Misc. Tools</string>
+    <string name="other_useful_tools">Other Useful Tools</string>
+    <string name="menu_port_scanning">Port Scanning</string>
+    <string name="subnet_devices_connected_to_your_network">Subnet Devices/ Connected to your network</string>
+    <string name="titleWakeonlan">WakeOnLan</string>
+    <string name="whois">Whois</string>
+    <string name="ip_netblocks">IP Netblocks</string>
+    <string name="value_yes">YES</string>
+    <string name="value_no">NO</string>
+    <string name="menu_popup_open_google_map">Open Google Maps</string>
+
+    <string name="action_title_websniffer">WebSniffer</string>
+    <string name="url_label">URL веб-сторінки. http/https:</string>
+    <string name="request_type_label">Тип запиту:</string>
+    <string name="http_version_label">Версія HTTP:</string>
+    <string name="user_agent_label">User agent:</string>
+    <string name="submit_button">Відправити</string>
+    <string name="share_program_text">Поділитися цією програмою:</string>
+    <string name="share_button_text">Поділитися</string>
+    <string name="request_header_label">Заголовок HTTP-запиту</string>
+    <string name="request_header_text">Підключення до %1$s на порту %2$d… %3$s\n\n</string>
+    <string name="response_header_label">Заголовок HTTP-відповіді</string>
+    <string name="hint_enter_url">Введіть URL</string>
+    <string name="action_button_scan">SCAN</string>
+    <string name="menu_title_rdns_lookup">Reverse DNS Lookup</string>
+    <string name="action_button_lookup">LOOKUP</string>
+    <string name="action_title_rdns_lookup">rDNS</string>
+    <string name="label_ip_address">Ip Address</string>
+    <string name="action_button_ping">PING</string>
+    <string name="title_iana_whois">IANA WHOIS</string>
+    <string name="invalid_ip_address">Invalid Ip Address</string>
+    <string name="hint_enter_mac">MAC address</string>
+    <string name="label_mac">MAC address</string>
+    <string name="action_title_ipconverter">IP Converter</string>
+    <string name="action_button_convert">CALCULATE</string>
+    <string name="hint_enter_mask">Subnet Mask</string>
+    <string name="action_calculate">CALCULATE</string>
+    <string name="title_IPCalculator">IP Calculator</string>
+    <string name="titleSSLExamination">SSL Examination</string>
+
+    <string name="cert_not_yet_valid">Certificate not yet valid</string>
+    <string name="cert_has_expired">Certificate has expired</string>
+    <string name="onboard_action_next">Next</string>
+    <string name="onboard_action_finish">GOT IT</string>
+    <string name="provideallfields">Provide all fields</string>
+    <string name="titleGeoPing">GeoPing</string>
+    <string name="action_button_geoping">PING</string>
+
+    <string name="error_msg_firebase">Будь ласка, надайте дозвіл на передачу ідентифікаторів пристрою до Firebase</string>
+    <string name="deny_consent">Відмовити у згоді (вимкнути)</string>
+    <string name="give_consent">Надати згоду (увімкнути)</string>
+
+    <string name="onboard2PrivacyPolicy">Для отримання додаткової інформації, будь ласка, ознайомтеся з нашою\n<u>Політикою конфіденційності</u></string>
+    <string name="error_msg_terms">Будь ласка, спочатку прийміть умови та положення</string>
+
+
+    <string name="onboard_1_title">Ласкаво просимо!</string>
+    <string name="onboard_1_description">Перша настройка.\nПочнемо!</string>
+
+    <string name="cert_valid">Термін дії сертифіката є дійсним</string>
+    <string name="i_accept_terms_and_conditions">Я приймаю Умови та Положення</string>
+
+    <string name="onboard_3_title">Виконано!\nДякуємо!</string>
+    <string name="onboard_3_description">Це додаток налаштований і готовий до використання.</string>
+    <string name="hint_enter_ip_or_host">Enter IP or Host</string>
+    <string name="min_port_no_cannot_be_greater">Min Port no. cannot be greater.</string>
+
+</resources>

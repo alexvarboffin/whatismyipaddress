@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_perm_title">Permission required</string>
+    <string name="alert_perm_body">In order to write apk file application must be granted with \"Storage\" permission.\nPlease, open app\'s settings and grant \"Storage\" permission to it.</string>
+    <string name="alert_perm_btn">Open settings</string>
+
+
+    <string name="alert_home_title">Внимание!</string>
+    <string name="alert_home_body">Для наилучшего определения некоторых параметров вашего оборудования, необходимо предоставить права для приложени, такие как получение информации о телефоне и местоположение. Данный можно и пропустить или предоставить позже.</string>
+    <string name="alert_home_btn">Продолжить</string>
+
+</resources>

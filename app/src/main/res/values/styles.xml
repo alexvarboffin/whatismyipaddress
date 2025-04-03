@@ -1,0 +1,266 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- <item name="android:windowBackground">@drawable/window_gradient</item>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#F6F4F4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--     Widget.MaterialComponents.BottomNavigationView-->
+    <!--    <style name="AppTheme.BottomNavigationView" parent="Widget.Design.BottomNavigationView">-->
+    <!--        <item name="badgeTextColor">#FFFFFF</item>-->
+    <!--        <item name="labelVisibilityMode">labeled</item>-->
+    <!--        <item name="itemTextColor">#FF000A</item>-->
+    <!--        <item name="itemIconTint">#FF000A</item>-->
+    <!--        <item name="itemRippleColor">#00BFA5</item>-->
+    <!--    </style>-->
+
+    <style name="AppTheme.Launcher" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_launcher_background_0</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--menu-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="GenericProgressBackground" parent="@android:style/Theme">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/background_floating_material_light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_group">
+        <item name="android:background">@drawable/layout_group_background</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+
+    <style name="layout_group_content" parent="TextAppearance.AppCompat">
+        <!--<item name="android:textAppearance">?android:textAppearanceLarge</item>-->
+        <!--        <item name="android:textColor">#383838</item>-->
+        <item name="android:textColor">#000000</item>
+        <!--        <item name="android:textStyle">italic</item>-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/oxygen_mono</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--    tools tab-->
+    <style name="Tab2H1" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/oxygen_mono</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="ItemMenuTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/oxygen_mono</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!--    main screen item h1-->
+    <style name="HeaderGroupText" parent="TextAppearance.AppCompat.Medium">
+        <!--<item name="android:textAppearance">?android:textAppearanceSmall</item>-->
+        <!--        <item name="android:textColor">#363131</item>-->
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/oxygen_mono</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:drawableLeft">@drawable/red_circle</item>-->
+        <!--<item name="android:drawablePadding">3.0dip</item>-->
+        <!--        <item name="android:textSize">18sp</item>-->
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="IpText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#292727</item>
+        <item name="fontFamily">@font/oxygen_mono</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="GenericTextViewStyle" parent="android:Widget.TextView">
+        <!-- <item name="android:fontFamily">@font/opensans_regular</item>-->
+    </style>
+
+    <!--<style name="GenericButtonStyle" parent="android:Widget.Holo.Button">-->
+    <!---->
+    <!--</style>-->
+
+    <style name="GenericButtonStyle">
+        <item name="android:fontFamily">@font/oxygen_mono</item>
+        <item name="android:background">@drawable/red_circle</item>
+        <item name="android:layout_margin">3.0dip</item>
+    </style>
+
+    <style name="AppTheme.Dotter">
+        <item name="android:background">@color/dot_color</item>
+    </style>
+
+    <style name="MoreAppTitle" parent="TextAppearance.AppCompat.Medium">
+        <!--<item name="android:textAppearance">?android:textAppearanceSmall</item>-->
+        <!--        <item name="android:textColor">#363131</item>-->
+        <item name="android:textColor">#FFD600</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:drawableLeft">@drawable/red_circle</item>-->
+        <!--<item name="android:drawablePadding">3.0dip</item>-->
+        <!--        <item name="android:textSize">18sp</item>-->
+        <!--   @@@@     <item name="fontFamily">@font/oxygen_mono</item>-->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="AppTheme.HeaderView">
+        <item name="android:background">@color/header_view</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!--    android:background="@color/colorPrimary"-->
+
+    <!--    dashborditemid-->
+    <style name="TextViewPrimary">
+        <item name="android:textColor">@color/item_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">#FFFFFF</item>
+        <!--        <item name="android:layout_marginTop">5dp</item>-->
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <!--    tab3-->
+    <style name="MyIpActionButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#ffffff</item>
+        <!--        <item name="android:backgroundTint">@color/colorPrimary</item>-->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="ButtonAction" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#ffffff</item>
+        <!--        <item name="android:backgroundTint">@color/colorPrimary</item>-->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+
+    </style>
+
+    <style name="AppTheme_TButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#ffffff</item>
+        <!--        <item name="android:backgroundTint">@color/colorPrimary</item>-->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+    </style>
+
+    <style name="EtIp" parent="Widget.AppCompat.EditText">
+        <item name="android:maxLines">1</item>
+        <item name="backgroundColor">#FF0048</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/search_bg</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:inputType">text|textImeMultiLine</item>
+    </style>
+
+    <style name="AppTheme_EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="backgroundColor">#FFD600</item>
+        <item name="android:inputType">text|textImeMultiLine</item>
+    </style>
+
+    <style name="ItemHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/item_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.OnboarTitle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/actor</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AppTheme.OnboarDescription" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/actor</item>
+        <item name="android:textColor">#393636</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.TermsContent" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="SubnetLanHostCol1Text" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorSubnetLanHostCol1Text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/actor</item>
+    </style>
+
+    <style name="ItemPortListText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorSubnetLanHostCol1Text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/actor</item>
+    </style>
+
+    <style name="certTextName" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorSubnetLanHostCol1Text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/actor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="certTextValue">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/actor</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_background"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.activities.IPNetBlocks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/headerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:theme="@style/AppTheme.HeaderView">-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/back"-->
+<!--                style="@style/AppTheme_TButton"-->
+<!--                android:layout_width="44dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:drawableStart="@drawable/ic_left" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:fontFamily="@font/alegreya_sans_sc_medium"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="7dp"-->
+<!--                android:text="@string/ip_netblocks"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:padding="8dp"
+            android:text="@string/ip_asn_autonomous_system_number_org"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ip"
+            style="@style/EtIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_ip_asn_org"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#111111"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <CheckBox
+                android:id="@+id/isIp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/amaranth"
+                android:text="IP" />
+
+            <CheckBox
+                android:id="@+id/isorg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/amaranth"
+                android:text="ORG" />
+
+            <CheckBox
+                android:id="@+id/isasn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/amaranth"
+                android:text="ASN" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/amaranth"
+            android:padding="10dp"
+            android:text="@string/optional_fields"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/timeoutHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/amaranth"
+                android:padding="7dp"
+                android:text="@string/mask_for_ip_only_0_128"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/limitHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/amaranth"
+                android:padding="7dp"
+                android:text="@string/limit_1_1000"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pingIp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/mask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:digits="0123456789"
+                android:fontFamily="@font/amaranth"
+                android:hint="@string/enter_mask"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:digits="0123456789"
+                android:fontFamily="@font/amaranth"
+                android:hint="@string/enter_limit"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:text="10"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/ipblocks"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:fontFamily="@font/amaranth"-->
+<!--            android:padding="4dp"-->
+<!--            android:text="@string/ip_netblocks"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="16sp" />-->
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item xmlns:n1="http://schemas.android.com/apk/res/android"
+        n1:id="@+id/menu_popup_copy"
+        n1:icon="@drawable/ic_content_copy_black_24dp"
+        n1:title="@string/menu_popup_copy" />
+
+    <item xmlns:n1="http://schemas.android.com/apk/res/android"
+        n1:id="@+id/menu_popup_open_map"
+        n1:icon="@drawable/ic_content_copy_black_24dp"
+        n1:title="@string/menu_popup_open_google_map" />
+</menu>

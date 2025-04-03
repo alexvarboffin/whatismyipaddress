@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:paddingLeft="7dp"
+    android:paddingTop="2dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="2dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/line1"
+        android:layout_toEndOf="@id/icon"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/item_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/app_name" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/gif"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                tools:src="@mipmap/ic_launcher"-->
+            <!--                tools:ignore="ContentDescription" />-->
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:SpinKit_Color="#FF6D00" />
+
+
+            <TextView
+                android:id="@+id/value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/item_text_color_value"
+                android:textSize="15sp"
+                tools:text="AA/AA" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/value4"
+        android:layout_toEndOf="@+id/line1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/value2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/item_text_color_value"
+            android:textSize="15sp"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/value3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/item_text_color_value"
+            android:textSize="14sp"
+            tools:text="@string/app_name" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/value4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_marginStart="0dp"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:padding="0dp"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+</RelativeLayout>

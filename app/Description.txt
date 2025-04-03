@@ -1,0 +1,78 @@
+What is My IP Address?
+https://play.google.com/store/apps/details?id=com.walhalla.whatismyipaddress
+
+
+D:\Firebase\Hosting\whatismyipaddress\public\screenshot\cropped
+https://artvk.blogspot.com/2023/07/google-play-ip.html
+
+
+=====================
+
+
+
+
+
+https://www.ip2location.com/
+https://www.iplocation.net/
+https://nordvpn.com/ip-lookup/
+https://tools.keycdn.com/geo
+curl -v https://rdap.db.ripe.net/ip/2001:67c:2e8:9::c100:14e6
+
+
+queries for IP information, while
+
+curl -v https://rdap.db.ripe.net/domain/193.0.6.139.in-addr.arpa
+
+    fn: Returns all the matches for person:, role:, and org-name: attributes.
+        Example: https://rdap.db.ripe.net/entities?fn=RIPE-RIPE
+    handle: Returns all the matches for organisation:, nic-hdl: attributes.
+        Example: https://rdap.db.ripe.net/entities?handle=RIPE-RIPE
+
+
+Domain Search
+
+The domains path segment allows searching for matches based on a term. The output is an array with objects in RDAP format.
+
+Syntax:
+
+https://rdap.db.ripe.net/domains?name={name}
+
+name: Returns all the matches for the domain: attribute
+
+    Example: https://rdap.db.ripe.net/domains?name=196.46.95.in-addr.arpa
+
+	https://rdap.db.ripe.net/help
+
+https://iplocation.io/
+https://whatismyipaddress.com/ip-lookup
+https://www.whatismyip.com/ip-address-lookup/
+https://www.home.neustar/resources/tools/ip-geolocation-lookup-tool
+https://www.melissa.com/v2/lookups/iplocation/ip/
+https://www.opentracker.net/feature/ip-tracker/
+https://dnschecker.org/ip-location.php
+
+X-Frame-Options Header Test Tool: Test if your website is defending from Clickjacking attack.
+X-Frame-Options Header Test
+
+exclude group: 'com.squareup.okhttp3'
+Test if your website is defending from Clickjacking attack.
+public void stopSendingRequests() {
+        //DLog.d("Отменяем задачу и закрываем OkHttpClient");
+        timer.cancel();
+        httpClient.dispatcher().cancelAll();
+        httpClient.connectionPool().evictAll();
+    }
+X-Frame-Options TestIcon
+
+X-Frame-Options Test
+https://www.iplocation.net/
+
+    Browser icon
+
+    IP Address
+    104.26.6.214
+
+    Report icon
+
+    Test Time
+    Tue, Jul 23, 2024 12:36 PM (GMT +03:00

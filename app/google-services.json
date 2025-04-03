@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "557255530547",
+    "firebase_url": "https://whatismyipaddress-e16fb.firebaseio.com",
+    "project_id": "whatismyipaddress-e16fb",
+    "storage_bucket": "whatismyipaddress-e16fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557255530547:android:a27a0f31555744ba",
+        "android_client_info": {
+          "package_name": "com.walhalla.whatismyipaddress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557255530547-gpn9fkv4fnvatbjq0q8okpghm5pb13hk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.walhalla.whatismyipaddress",
+            "certificate_hash": "96b53f0ca4857918a3a4022492dcf18ec399cf2d"
+          }
+        },
+        {
+          "client_id": "557255530547-0o151ffong4uh0g6962pi00htmbt683r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.walhalla.whatismyipaddress",
+            "certificate_hash": "bc2388bfe19be7212211b95e2d2b7abbf0a735e8"
+          }
+        },
+        {
+          "client_id": "557255530547-srpa4eugjq87k7l6324lm4jjebrs5m1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj3jEowRGhyI-60jPwkwwuMfltFe10aRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557255530547-srpa4eugjq87k7l6324lm4jjebrs5m1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

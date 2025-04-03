@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="item_icon_width">50dp</dimen>
+    <dimen name="dot_height">77dp</dimen>
+
+    <!--    ip_-->
+    <dimen name="text">16dp</dimen>
+    <dimen name="speedMeasure">20sp</dimen>
+    <dimen name="timeMeasure">18sp</dimen>
+    <dimen name="serverText">14sp</dimen>
+    <dimen name="pingJitterLabel">18sp</dimen>
+    <dimen name="pingJitterText">32sp</dimen>
+    <dimen name="gaugeLabel">18sp</dimen>
+
+    <dimen name="gaugeText">36sp</dimen>
+    <dimen name="gaugeSize">150dp</dimen>
+    <dimen name="gaugeThickness">10dp</dimen>
+    <dimen name="progressSize">80dp</dimen>
+    <dimen name="ipInfoText">16sp</dimen>
+
+    <dimen name="privacyLinks">16sp</dimen>
+
+    <dimen name="pingArea_maxWidth">300dp</dimen>
+    <dimen name="gaugeArea_maxWidth">500dp</dimen>
+
+    <dimen name="logo_maxWidth">400dp</dimen>
+    <dimen name="logo_inapp_height">60dp</dimen>
+    <dimen name="loading_size">24dp</dimen>
+
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_sep">18dp</dimen>
+    <dimen name="margin_smallSep">8dp</dimen>
+    <dimen name="margin_largeSep">48dp</dimen>
+
+
+    <dimen name="failButton_text">16sp</dimen>
+    <dimen name="startButton_text">16sp</dimen>
+
+
+    <dimen name="failButton_hPadding">6dp</dimen>
+    <dimen name="failButton_vPadding">6dp</dimen>
+
+    <dimen name="startButton_hPadding">6dp</dimen>
+    <dimen name="startButton_vPadding">6dp</dimen>
+    <dimen name="shareButton_text">16sp</dimen>
+    <dimen name="shareButton_hPadding">6dp</dimen>
+    <dimen name="shareButton_vPadding">6dp</dimen>
+    <dimen name="restartButton_text">16sp</dimen>
+    <dimen name="restartButton_hPadding">6dp</dimen>
+    <dimen name="restartButton_vPadding">6dp</dimen>
+
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

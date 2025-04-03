@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="tab_icons">
+        <item>@drawable/ic_ip_address</item>
+        <item>@drawable/ic_computer</item>
+        <item>@drawable/ic_earth</item>
+        <item>@drawable/ic_computer</item>
+    </integer-array>
+
+</resources>

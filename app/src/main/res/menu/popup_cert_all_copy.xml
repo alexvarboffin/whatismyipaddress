@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionCopyAllCommonName"
+        android:icon="@drawable/ic_baseline_text_snippet_24"
+        android:orderInCategory="104"
+        android:title="@string/actionCopyAllCommonName" />
+
+    <item
+        android:id="@+id/actionCopyAllNameValue"
+        android:icon="@drawable/ic_baseline_text_snippet_24"
+        android:orderInCategory="104"
+        android:title="@string/actionCopyAllNameValue" />
+
+    <item
+        android:id="@+id/actionCopyAllCommonNameAndNameValue"
+        android:icon="@drawable/ic_baseline_text_snippet_24"
+        android:orderInCategory="104"
+        android:title="@string/actionCopyAllCommonNameAndNameValue" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_manifest"-->
+<!--        android:icon="@drawable/ic_manifest_explorer"-->
+<!--        android:orderInCategory="106"-->
+<!--        android:title="@string/action_app_manifest" />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/action_share_icon"-->
+    <!--        android:icon="@drawable/ic_share"-->
+    <!--        android:orderInCategory="107"-->
+    <!--        android:title="@string/action_share_file" />-->
+
+</menu>

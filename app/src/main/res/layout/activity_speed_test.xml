@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activities.SpeedTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        android:background="@color/appBackground"
+        tools:context=".ui.activities.SpeedTest">
+
+        <ImageView
+            android:id="@+id/testBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.HeaderView">
+
+            <Button
+                android:id="@+id/back"
+                style="@style/AppTheme_TButton"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_left" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/back"
+                android:fontFamily="@font/alegreya_sans_sc_medium"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/title_speed_test"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerView">
+
+            <RelativeLayout
+                android:id="@+id/page_splash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashBackground"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:visibility="invisible"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/page_init"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ProgressBar
+                    android:id="@+id/init_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/loading_size"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/loadingColor" />
+
+                <TextView
+                    android:id="@+id/init_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@id/init_progress"
+                    android:layout_toRightOf="@id/init_progress"
+                    android:text="TEXT GOES HERE"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/page_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/fail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ERROR DESCRIPTION"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text" />
+
+                <Button
+                    android:id="@+id/fail_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fail_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="@dimen/margin_sep"
+                    android:fontFamily="@font/amaranth"
+                    android:paddingLeft="@dimen/failButton_hPadding"
+                    android:paddingTop="@dimen/failButton_vPadding"
+                    android:paddingRight="@dimen/failButton_hPadding"
+                    android:paddingBottom="@dimen/failButton_vPadding"
+                    android:text="ACTION"
+                    android:textColor="@color/failButton_text"
+                    android:textSize="@dimen/failButton_text"
+                    app:backgroundTint="@color/error" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/page_serverSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/selectServer_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/serverSelect_message"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text" />
+
+                <Spinner
+                    android:id="@+id/serverList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/selectServer_message"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_largeSep"
+                    android:textSize="@dimen/text" />
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/serverList"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/margin_sep"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="@dimen/startButton_hPadding"
+                    android:paddingTop="@dimen/startButton_vPadding"
+                    android:paddingRight="@dimen/startButton_hPadding"
+                    android:paddingBottom="@dimen/startButton_vPadding"
+                    android:text="@string/start"
+                    android:textColor="@color/startButton_text"
+                    android:textSize="@dimen/startButton_text"
+                    app:backgroundTint="@color/startButton_background" />
+
+                <TextView
+                    android:id="@+id/privacy_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_sep"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:text="@string/privacy_open"
+                    android:textColor="@color/privacyLinks"
+                    android:textSize="@dimen/privacyLinks" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/page_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/appBackground"
+                android:visibility="invisible">
+
+                <WebView
+                    android:id="@+id/privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/privacy_close" />
+
+                <TextView
+                    android:id="@+id/privacy_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_sep"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:text="@string/privacy_close"
+                    android:textColor="@color/privacyLinks"
+                    android:textSize="@dimen/privacyLinks" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_test" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/b1" />
+
+</RelativeLayout>

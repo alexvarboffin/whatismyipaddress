@@ -1,0 +1,51 @@
+package com.aaronjwood.portauthority.async;
+
+import com.aaronjwood.portauthority.db.Database0;
+import com.aaronjwood.portauthority.parser.Parser;
+import com.aaronjwood.portauthority.response.MainAsyncResponse;
+
+import java.lang.ref.WeakReference;
+
+public class DownloadPortDataAsyncTask extends DownloadAsyncTask {
+
+    // The official source on iana.org doesn't provide a content length header which ruins our ability to report progress!
+    //private static final String SERVICE = "https://raw.githubusercontent.com/wireshark/wireshark/master/services";
+    private static final String SERVICE = "https://whatismyipaddress-e16fb.web.app/services.txt";
+
+    /**
+     * Creates a new asynchronous task that takes care of downloading port data.
+     *
+     * @param database
+     * @param parser
+     * @param activity
+     */
+    public DownloadPortDataAsyncTask(Database0 database, Parser parser, MainAsyncResponse activity) {
+        db = database;
+        delegate = new WeakReference<>(activity);
+        this.parser = parser;
+    }
+
+    /**
+     * Downloads new port data.
+     *
+     * @param params
+     * @return
+     */
+    @Override
+    protected Void doInBackground(Void... params) {
+        db.clearPorts();
+        doInBackground(SERVICE, parser);
+        return null;
+    }
+
+    /**
+     * Dismisses the dialog.
+     *
+     * @param result
+     */
+    @Override
+    protected void onPostExecute(Void result) {
+        super.onPostExecute(result);
+    }
+
+}

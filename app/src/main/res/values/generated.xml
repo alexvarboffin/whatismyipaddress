@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_id" translatable="false">ca-app-pub-5111357348858303~1119032754</string>
+    <string name="b1" translatable="false">ca-app-pub-5111357348858303/9993967729</string>
+    <string name="b2" translatable="false">ca-app-pub-5111357348858303/9738898343</string>
+    <string name="appOpen" translatable="false">ca-app-pub-5111357348858303/3096618775</string>
+
+
+    <string name="url_privacy_policy" translatable="false">https://whatismyipaddress-e16fb.firebaseapp.com/privacy_policy.html</string>
+
+
+</resources>

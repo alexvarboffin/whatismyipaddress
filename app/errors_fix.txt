@@ -1,0 +1,22 @@
+https://ip-netblocks.whoisxmlapi.com
+https://www.whoisxmlapi.com/whoisserver/
+http://ip-api.com/json
+http://checkip.amazonaws.com
+
+android.content.res.Resources$NotFoundException
+Android версии 8.1.0 Model:Nexus 5X   api 27
+
+А если сделать так:
+bundle {
+        density {
+            enableSplit = false
+        }
+
+        abi {
+            enableSplit = false
+        }
+
+        language {
+            enableSplit = false
+        }
+    }

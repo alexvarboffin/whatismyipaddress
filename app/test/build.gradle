@@ -1,0 +1,138 @@
+plugins {
+    id("com.android.application")
+}
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+android {
+    namespace 'com.stdio.test'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.stdio.test"
+        minSdk 21
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:$rootProject.compatVersion")
+    iimplementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+
+    implementation("com.google.firebase:firebase-ads:$rootProject.gmsAds")
+    implementation("com.google.android.gms:play-services-ads:$rootProject.gmsAds") {//min 31
+        exclude group: 'com.android.support'
+    }
+    //min19 18.0.0
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+
+//    implementation("com.google.android.gms:play-services-measurement-api:16.0.3")
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'androidx.test:runner:1.1.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+//    implementation("com.google.firebase:firebase-storage:16.0.3")
+//    implementation("com.google.firebase:firebase-auth:16.0.5")
+
+//    implementation("com.google.firebase:firebase-core:16.0.5")
+//    implementation("com.google.firebase:firebase-ads:17.1.3")
+
+//    implementation("com.google.firebase:firebase-analytics:16.0.5")
+//    implementation("com.google.android.gms:play-services-measurement-base:16.0.4")
+
+    //implementation files('libs/okhttp-2.0.0.jar')
+    //implementation project(':threader')
+
+    implementation project(':features:wads')
+    implementation project(':features:ui')
+    implementation project(':library')
+    implementation project(':threader')
+    //implementation("com.crashlytics.sdk.android:crashlytics:2.10.1")
+    implementation("com.github.delight-im:Android-AdvancedWebView:v3.2.1")
+
+    //implementation("com.github.GrenderG:Toasty:'11111111.5.2")
+    //Test
+    //implementation("com.github.alexvarboffin:Toasty:1.5.2")
+    implementation("com.github.alexvarboffin:mint-android-app:1.5.2")//from mavenLocal
+
+    implementation("com.github.ybq:Android-SpinKit:1.4.0")
+
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation("com.google.firebase:firebase-crashlytics:$rootProject.crashlyticsVersion")
+    implementation("com.google.firebase:firebase-analytics:$rootProject.analyticsVersion")
+
+    implementation("com.github.sujithkanna:smileyrating:2.0.0")
+
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    implementation("com.daimajia.easing:library:2.4@aar")
+    implementation("com.daimajia.androidanimations:library:2.4@aar")
+    implementation("com.github.fulvius31:ip-neigh-sdk30:v0.0.2-alpha")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycle_version")
+
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0")
+
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("androidx.preference:preference:1.2.1")
+
+    //implementation("com.googlecode.whois-java:whois-java:4.0.0")
+    //implementation("com.github.pedrovgs:android-network-tools:2.0.0")
+    implementation ('com.github.stealthcopter:AndroidNetworkTools:0.4.5.3'){
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+
+    //Network
+//    implementation("com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion")
+//    implementation("com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion")
+//    implementation("com.squareup.okio:okio:3.6.0")
+
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    //noinspection GradleDependency
+    implementation("org.slf4j:slf4j-api:1.7.32")
+
+    implementation('com.merhold.extensiblepageindicator:extensiblepageindicator:1.0.1') {
+        exclude group: 'com.google.android.gms'
+        //exclude group: 'com.squareup.okhttp3'
+        //exclude group: 'com.google.android.gms', module: 'play-services-basement'
+    }
+
+    implementation ('com.github.bumptech.glide:glide:4.16.0'){
+        exclude group: 'com.squareup.okhttp3'
+    }
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+
+    //implementation("com.wandroid:traceroute-for-android:1.0.0")
+
+    //dns
+    implementation("org.minidns:minidns-hla:1.0.2")
+    //implementation@@@@@@@@@@@@@@@app-update:2.1.0'
+}

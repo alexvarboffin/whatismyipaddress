@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/pingIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_bg"
+        android:digits="@string/ipDigits"
+        android:fontFamily="@font/amaranth"
+        android:hint="@string/hint_enter_ip"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#111111"
+        android:textSize="18sp"
+        tools:ignore="TextFields" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/timeoutHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/min_port_number"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/limitHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/max_port_no_65535"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pingIp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:digits="0123456789"
+            android:fontFamily="@font/amaranth"
+            android:hint="@string/hint_min_port_number"
+            android:imeOptions="actionDone"
+            android:maxLength="5"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textColor="#111111"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/max"
+            tools:ignore="RtlSymmetry,TextFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:digits="0123456789"
+            android:fontFamily="@font/amaranth"
+            android:hint="@string/hint_max_port_number"
+            android:imeOptions="actionDone"
+            android:maxLength="5"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="100"
+            android:textColor="#111111"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/amaranth"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/time_out_millisecond"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:digits="0123456789"
+            android:fontFamily="@font/amaranth"
+            android:hint="@string/hint_timeout"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="300"
+            android:textColor="#111111"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:digits="0123456789"
+            android:fontFamily="@font/amaranth"
+            android:hint="@string/hint_limit"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="100"
+            android:textColor="#111111"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

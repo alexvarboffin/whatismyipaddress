@@ -1,0 +1,124 @@
+plugins {
+    id("com.android.library")
+    //id("org.jetbrains.dokka-android")
+    id("kotlin-android")
+    //apply plugin: 'kotlin-android'
+    //apply plugin: 'com.novoda.bintray-release'
+}
+android {
+
+//    configurations {
+//        //all*.exclude module: 'okhttp'
+//        //all*.exclude module: 'okio'
+//        all*.exclude module: 'okio-jvm'
+//    }
+
+//    configurations.configureEach {
+//        resolutionStrategy {
+//            force 'com.squareup.okio:okio:3.6.0'
+//            force 'com.squareup.okio:okio-jvm:3.6.0'
+//        }
+//    }
+
+
+    namespace("com.wandroid.traceroute")
+
+    buildFeatures {
+        //dataBinding = true
+        viewBinding = true
+    }
+
+    compileSdk 35
+    buildToolsVersion rootProject.buildToolsVersion0
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion0
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation libs.junit
+    androidTestImplementation libs.runner
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10")
+
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.constraintlayout)
+    //noinspection GradleDependency
+
+//    implementation("com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion")
+//    implementation("com.squareup.okio:okio:3.6.0")
+
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    implementation("org.minidns:minidns-hla:1.0.2")
+}
+
+//task generateSourcesJar(type: Jar) {
+//    group = 'jar'
+//    from android.sourceSets.main.java.srcDirs
+//    classifier = 'sources'
+//}
+
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+
+//task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
+//    outputFormat = "javadoc"
+//    outputDirectory = javadoc.destinationDir
+//}
+
+//task generateJavadoc(type: Jar, dependsOn: dokkaJavadoc) {
+//    group = 'jar'
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
+
+//artifacts {
+//    archives generateJavadoc
+//    archives generateSourcesJar
+//}
+
+//publish {
+//    userOrg = 'angelwangjing'
+//    groupId = 'com.wandroid'
+//    artifactId = 'traceroute-for-android'
+//    publishVersion = '1.0.1'
+//    desc = 'traceroute with jni on android'
+//    website = 'https://github.com/wangjing53406/traceroute-for-android'
+//}

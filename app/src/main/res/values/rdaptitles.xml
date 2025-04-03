@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="domain_identifier">Domain Identifier</string>
+    <string name="start_address">Start Address</string>
+    <string name="end_address">End Address</string>
+    <string name="ip_version">IP Version</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="parent_handle">Parent Handle</string>
+    <string name="port_43">Port for WHOIS queries (Port 43)</string>
+    <string name="object_class_name">Object Class Name</string>
+    <string name="events">Events</string>
+    <string name="links">Links</string>
+    <string name="entities">Entities</string>
+    <string name="status">Status</string>
+    <string name="cidr0_cidrs">CIDR0 CIDRs</string>
+    <string name="arin_originas0_originautnums">ARIN Origin AS0 Origin Autnums</string>
+
+</resources>

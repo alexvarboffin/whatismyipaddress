@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Not set RESOURCE link like:
+<solid android:color="@color/...."/> crash
+
+<solid android:color="#B10A38"/> ok
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#000000"/>
+            <!--<gradient-->
+                <!--android:angle="45"-->
+                <!--android:endColor="#B10A38"-->
+                <!--android:startColor="#5B0A6B"-->
+                <!--android:type="linear" />-->
+        </shape>
+    </item>
+<!--    <item>-->
+<!--        <bitmap-->
+<!--            android:gravity="center"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
+<!--    </item>-->
+</layer-list>
