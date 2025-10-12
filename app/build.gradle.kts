@@ -43,14 +43,15 @@ android {
         }
     }
 
-    compileSdk = 35
-    buildToolsVersion = "35.0.0"
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.android.buildTools.get()
 
     val versionPropsFile = file("version.properties")
 
     if (versionPropsFile.canRead()) {
         val code = if (project.hasProperty("enableLoader") &&
-                project.properties["enableLoader"].toString().toBoolean()) {
+            project.properties["enableLoader"].toString().toBoolean()
+        ) {
             200400
         } else {
             versionCodeDate()
@@ -64,8 +65,8 @@ android {
             resConfigs("ru", "en", "uk")
 
             applicationId = "com.walhalla.whatismyipaddress"
-            minSdk = 21
-            targetSdk = 36
+            minSdk = libs.versions.android.minSdk.get().toInt()
+            targetSdk = libs.versions.android.targetSdk.get().toInt()
             versionCode = code
             versionName = "1.1.$code"
 
@@ -97,8 +98,8 @@ android {
             isShrinkResources = false
             isDebuggable = false
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
             signingConfig = signingConfigs.getByName("config")
             isJniDebuggable = false
@@ -118,10 +119,10 @@ android {
     packaging {
         resources {
             excludes += setOf(
-                    "META-INF/LICENSE",
-                    "META-INF/LICENSE.txt",
-                    "META-INF/NOTICE",
-                    "META-INF/NOTICE.txt"
+                "META-INF/LICENSE",
+                "META-INF/LICENSE.txt",
+                "META-INF/NOTICE",
+                "META-INF/NOTICE.txt"
             )
         }
     }
@@ -178,7 +179,11 @@ dependencies {
     implementation(libs.google.firebase.crashlytics)
     implementation(libs.google.firebase.analytics)
 
-    implementation("com.github.sujithkanna:smileyrating:2.0.0")
+    // https://mvnrepository.com/artifact/com.github.sujithkanna/smileyrating
+    //implementation("com.github.sujithkanna:smileyrating:2.0.0")
+    implementation(project(":smilerating"))
+    // https://mvnrepository.com/artifact/androidx.privacysandbox.ads/ads-adservices
+    implementation("androidx.privacysandbox.ads:ads-adservices:1.1.0-beta12")
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation("com.daimajia.easing:library:2.4@aar")
     implementation("com.daimajia.androidanimations:library:2.4@aar")

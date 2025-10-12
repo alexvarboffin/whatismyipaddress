@@ -38,6 +38,7 @@ include(":app")
 rootProject.name="whatismyipaddress"
 
 include(":library")
+include(":smilerating")
 
 include(":features:ui")
 project(":features:ui").projectDir = File("../WalhallaUI\\features\\ui")
