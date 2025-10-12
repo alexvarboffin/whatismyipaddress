@@ -5,6 +5,9 @@
 
     See COPYING for the status of this software.
 */
+#define _POSIX_C_SOURCE 200809L
+
+#include <string.h>
 
 #include <stdlib.h>
 #include <unistd.h>

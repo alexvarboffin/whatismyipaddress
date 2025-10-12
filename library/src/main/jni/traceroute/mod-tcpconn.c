@@ -5,7 +5,12 @@
 
     See COPYING for the status of this software.
 */
+#define _POSIX_C_SOURCE 200809L
+#define _GNU_SOURCE
 
+#include <string.h>  // для memcpy, memset, memmove и др.
+#include <stdlib.h>  // для malloc, free и др.
+#include <stdio.h>   // для printf и др. функций ввода-вывода
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/socket.h>

@@ -5,9 +5,13 @@
 
     See COPYING for the status of this software.
 */
+#define _POSIX_C_SOURCE 200809L
+#define _GNU_SOURCE
 
-#include <stdio.h>
+#include <string.h>  // для strrchr, strchr, strcpy, strlen и др. строковых функций
 #include <stdlib.h>
+#include <stdio.h>
+
 #include <stdarg.h>
 #include <unistd.h>
 #include <fcntl.h>
