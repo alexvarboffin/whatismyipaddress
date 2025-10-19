@@ -1,23 +1,19 @@
-package com.hsalf.smileyrating.helper;
+package com.hsalf.smileyrating.helper
 
-import java.util.HashSet;
-import java.util.Set;
+class SmileyActiveIndicator {
+    private val indicators: MutableSet<TouchActiveIndicator> = HashSet<TouchActiveIndicator>()
 
-public class SmileyActiveIndicator {
-
-    private Set<TouchActiveIndicator> indicators = new HashSet<>();
-
-    public boolean isActive() {
-        for (TouchActiveIndicator indicator : indicators) {
-            if (indicator.isBeingTouched()) {
-                return true;
+    val isActive: Boolean
+        get() {
+            for (indicator in indicators) {
+                if (indicator.isBeingTouched()) {
+                    return true
+                }
             }
+            return false
         }
-        return false;
-    }
 
-    public void bind(TouchActiveIndicator indicator) {
-        indicators.add(indicator);
+    fun bind(indicator: TouchActiveIndicator?) {
+        indicators.add(indicator!!)
     }
-
 }

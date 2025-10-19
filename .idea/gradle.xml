@@ -13,13 +13,13 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/smilerating" />
             <option value="$PROJECT_DIR$/../WalhallaUI/features/ui" />
             <option value="$PROJECT_DIR$/../WalhallaUI/features/wads" />
             <option value="$PROJECT_DIR$/../WalhallaUI/shared" />
             <option value="D:/walhalla/sdk/android/multithreader/threader" />
           </set>
         </option>
-        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

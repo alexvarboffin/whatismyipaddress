@@ -167,7 +167,7 @@ dependencies {
     implementation(libs.play.services.ads)
 
     implementation("com.google.android.gms:play-services-maps:18.2.0")
-    implementation(project(":features:wads"))
+    //implementation(project(":features:wads"))
     implementation(project(":features:ui"))
     implementation(project(":library"))
     implementation(project(":threader"))

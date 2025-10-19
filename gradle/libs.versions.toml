@@ -214,7 +214,7 @@ insert-koin-koin-compose = { module = "io.insert-koin:koin-compose", version.ref
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.22" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.2.0" }
 
 google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
 firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebase-crashlytics-gradle" }
