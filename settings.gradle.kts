@@ -35,6 +35,8 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 
 include(":app")
+include(":bonjour")
+
 rootProject.name="whatismyipaddress"
 
 include(":library")

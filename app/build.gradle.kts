@@ -173,6 +173,8 @@ dependencies {
     implementation(project(":features:ui"))
     implementation(project(":library"))
     implementation(project(":threader"))
+    implementation(project(":bonjour"))
+
 
     implementation("com.github.delight-im:Android-AdvancedWebView:v3.2.1")
     //@@@@implementation("com.github.alexvarboffin:mint-android-app:1.5.2")
@@ -217,4 +219,6 @@ dependencies {
     annotationProcessor(libs.compiler)
     implementation(libs.minidns.hla)
     implementation(libs.onesignal)
+
+    implementation("com.github.andriydruk:rx2dnssd:0.9.17")
 }
