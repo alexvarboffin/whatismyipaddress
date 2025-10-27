@@ -86,6 +86,7 @@ android {
     buildTypes {
         getByName("debug") {
             isMinifyEnabled = false
+            //noinspection WrongGradleMethod
             firebaseCrashlytics {
                 mappingFileUploadEnabled = false
             }
@@ -103,6 +104,7 @@ android {
             )
             signingConfig = signingConfigs.getByName("config")
             isJniDebuggable = false
+            //noinspection WrongGradleMethod
             firebaseCrashlytics {
                 mappingFileUploadEnabled = true
             }
@@ -158,7 +160,7 @@ apply(from = "C:\\scripts/copyReports.gradle")
 //============================================
 
 dependencies {
-    implementation(fileTree(mapOf("include" to listOf("*.jar"), "dir" to "libs")))
+    implementation(fileTree(mapOf("include" to listOf("*.jar", "*.aar"), "dir" to "libs")))
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
@@ -167,7 +169,7 @@ dependencies {
     implementation(libs.play.services.ads)
 
     implementation("com.google.android.gms:play-services-maps:18.2.0")
-    //implementation(project(":features:wads"))
+    implementation(project(":features:wads"))
     implementation(project(":features:ui"))
     implementation(project(":library"))
     implementation(project(":threader"))
@@ -181,7 +183,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.github.sujithkanna/smileyrating
     //implementation("com.github.sujithkanna:smileyrating:2.0.0")
+
     implementation(project(":smilerating"))
+    implementation(project(":extensiblepageindicator"))
+
     // https://mvnrepository.com/artifact/androidx.privacysandbox.ads/ads-adservices
     implementation("androidx.privacysandbox.ads:ads-adservices:1.1.0-beta12")
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
@@ -203,9 +208,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor")
     implementation("org.slf4j:slf4j-api:1.7.32")
 
-    implementation("com.merhold.extensiblepageindicator:extensiblepageindicator:1.0.1") {
-        exclude(group = "com.google.android.gms")
-    }
+
 
     implementation("com.github.bumptech.glide:glide:4.16.0") {
         exclude(group = "com.squareup.okhttp3")

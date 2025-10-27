@@ -1,5 +1,7 @@
 package com.walhalla.whatismyipaddress.ui.activities.Main;
 
+import static com.walhalla.ui.plugins.DialogAbout.aboutDialog;
+
 import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -77,7 +79,7 @@ public class BottomHolder extends AppCompatActivity
         } else if (itemId == R.id.action_copy) {//Tools.copyToClipboard(Tools.getDataText(this.mDatabaseManager, dataLocal, this), this);
             return false;
         } else if (itemId == R.id.action_about) {
-            Module_U.aboutDialog(this);
+            aboutDialog(this);
             return true;
         } else if (itemId == R.id.action_privacy_policy) {
             Launcher.openBrowser(this, getString(R.string.url_privacy_policy));

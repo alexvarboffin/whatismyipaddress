@@ -55,3 +55,5 @@ project(":shared").projectDir = File("../WalhallaUI\\shared")
 
 //D:\walhalla\sdk\android\multithreader\threader
 //include(":app:test")
+
+include(":extensiblepageindicator")

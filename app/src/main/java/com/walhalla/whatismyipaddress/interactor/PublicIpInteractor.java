@@ -52,7 +52,7 @@ public class PublicIpInteractor extends AbstractInteractor {
 
     public void execute() {
         DLog.d("[execute]: mark this interactor as running");
-        this.mIsRunning = true;
+        //this.mIsRunning = true;
 
         // start running this interactor in a background thread
         mThreadExecutor.execute(this);
