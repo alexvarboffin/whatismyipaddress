@@ -60,7 +60,7 @@ android {
 
 dependencies {
     implementation(libs.rx2dnssd)
-    implementation(libs.material3)
+    //implementation(libs.material3)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.recyclerview)

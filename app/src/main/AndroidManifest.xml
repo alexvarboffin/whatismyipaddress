@@ -330,6 +330,27 @@
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />
 
+
+
+
+<!--        bonjour-->
+        <activity android:name="com.druk.servicebrowser.ui.RegTypeActivity" />
+        <activity android:name="com.druk.servicebrowser.ui.ServiceActivity" />
+        <activity
+            android:name="com.druk.servicebrowser.ui.LicensesActivity"
+            android:label="@string/licences" />
+        <activity android:name="com.druk.servicebrowser.ui.HTMLViewerActivity" />
+        <activity android:name="com.druk.servicebrowser.ui.MainActivity"/>
+
+        <activity
+            android:name="com.druk.servicebrowser.ui.RegistrationsActivity"
+            android:label="@string/title_activity_registrations"
+            android:exported="true"/>
+        <activity
+            android:name="com.druk.servicebrowser.ui.RegisterServiceActivity"
+            android:label="@string/register_new_service"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

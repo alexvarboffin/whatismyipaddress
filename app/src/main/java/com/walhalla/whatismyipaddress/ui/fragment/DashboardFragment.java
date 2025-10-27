@@ -184,8 +184,11 @@ public class DashboardFragment extends BaseFragment {
             PublicIpInteractor publicIp = new PublicIpInteractor(BackgroundExecutor.getInstance(), MainThreadImpl.getInstance(), new PublicIpInteractor.Callback() {
                 @Override
                 public void onMessageRetrieved(String ip0) {
-                    DashboardFragment.this.ip = ip0;
-                    DashboardFragment.this.publicIP.setText(ip);
+                  getActivity().runOnUiThread(()->{
+                      DashboardFragment.this.ip = ip0;
+                      DashboardFragment.this.publicIP.setText(ip);
+                  });
+
                 }
 
                 @Override

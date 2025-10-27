@@ -49,8 +49,8 @@ open class ServiceBrowserFragment : Fragment() {
 
     @JvmField
     protected var mAdapter: ServiceAdapter? = null
-    protected var mReqType: String? = null
-    protected var mDomain: String? = null
+    protected var mReqType: String = ""
+    protected var mDomain: String = ""
     protected lateinit var mRecyclerView: RecyclerView
     protected var mProgressView: LinearLayout? = null
     protected var mErrorView: LinearLayout? = null
@@ -251,7 +251,7 @@ open class ServiceBrowserFragment : Fragment() {
     }
 
     interface ServiceListener {
-        fun onServiceWasSelected(domain: String?, regType: String?, service: BonjourService?)
+        fun onServiceWasSelected(domain: String, regType: String, service: BonjourService)
     }
 
     companion object {
@@ -260,7 +260,7 @@ open class ServiceBrowserFragment : Fragment() {
         private const val KEY_SELECTED_POSITION = "selected_position"
 
         @JvmStatic
-        fun newInstance(domain: String?, regType: String?): Fragment {
+        fun newInstance(domain: String, regType: String): Fragment {
             return fillArguments(ServiceBrowserFragment(), domain, regType)
         }
 
