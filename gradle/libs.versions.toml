@@ -67,7 +67,7 @@ review = "2.0.2"
 androidx-material = "1.13.0"
 
 #playServicesAds = "24.7.0"
-playServicesAds = "24.4.0"
+playServicesAds = "24.7.0"
 
 lifecycleProcess = "2.9.4"
 lifecycleViewmodelKtx = "2.9.4"

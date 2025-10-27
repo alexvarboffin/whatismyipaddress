@@ -649,6 +649,7 @@ public class DashboardFragment extends BaseFragment {
 
         rating.setFaceColor(SmileyRating.Type.TERRIBLE, active_element_color);
         rating.setFaceBackgroundColor(SmileyRating.Type.TERRIBLE, color);
+
         rating.disallowSelection(true);
 
     }

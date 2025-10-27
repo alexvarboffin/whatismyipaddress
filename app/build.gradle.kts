@@ -183,8 +183,9 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.github.sujithkanna/smileyrating
     //implementation("com.github.sujithkanna:smileyrating:2.0.0")
+    //implementation(project(":smilerating"))
+    implementation("com.github.Mk7Lab:SmileyRating:v1.1.3")
 
-    implementation(project(":smilerating"))
     implementation(project(":extensiblepageindicator"))
 
     // https://mvnrepository.com/artifact/androidx.privacysandbox.ads/ads-adservices
