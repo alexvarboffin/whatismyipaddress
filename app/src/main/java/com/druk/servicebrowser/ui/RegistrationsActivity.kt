@@ -28,9 +28,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-import com.druk.servicebrowser.R
 import com.druk.servicebrowser.ui.adapter.ServiceAdapter
 import com.github.druk.rx2dnssd.BonjourService
+import com.walhalla.whatismyipaddress.R
 import com.walhalla.whatismyipaddress.TApp
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -109,19 +109,21 @@ class RegistrationsActivity : AppCompatActivity() {
         override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
             if (requestCode == REGISTER_REQUEST_CODE) {
                 if (resultCode == RESULT_OK) {
-                    val bonjourService = RegisterServiceActivity.parseResult(data)
-                    mDisposable = TApp.getRegistrationManager(requireContext())
-                        .register(requireContext(), bonjourService)
-                        .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(
-                            Consumer { service: BonjourService? -> this@RegistrationsFragment.updateServices() },
-                            Consumer { throwable: Throwable ->
-                                Toast.makeText(
-                                    this@RegistrationsFragment.context,
-                                    "Error: " + throwable.message,
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            })
+                    data?.let {
+                        val bonjourService = RegisterServiceActivity.parseResult(it)
+                        mDisposable = TApp.getRegistrationManager(requireContext())
+                            .register(requireContext(), bonjourService!!)
+                            .observeOn(AndroidSchedulers.mainThread())
+                            .subscribe(
+                                Consumer { service: BonjourService? -> this@RegistrationsFragment.updateServices() },
+                                Consumer { throwable: Throwable ->
+                                    Toast.makeText(
+                                        this@RegistrationsFragment.context,
+                                        "Error: " + throwable.message,
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                })
+                    }
                 }
                 return
             } else if (requestCode == STOP_REQUEST_CODE) {

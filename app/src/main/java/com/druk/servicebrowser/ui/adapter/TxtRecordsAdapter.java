@@ -19,6 +19,8 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import com.google.android.material.snackbar.Snackbar;
+import com.walhalla.whatismyipaddress.R;
+
 import androidx.collection.ArrayMap;
 import androidx.collection.SimpleArrayMap;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,7 +31,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.druk.servicebrowser.R;
 
 
 public class TxtRecordsAdapter extends RecyclerView.Adapter<TxtRecordsAdapter.ViewHolder> {

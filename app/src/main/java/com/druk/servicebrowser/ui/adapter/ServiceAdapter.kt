@@ -23,8 +23,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.druk.servicebrowser.R
+
 import com.github.druk.rx2dnssd.BonjourService
+import com.walhalla.whatismyipaddress.R
 import java.util.Collections
 
 abstract class ServiceAdapter protected constructor(context: Context) :
@@ -113,7 +114,7 @@ abstract class ServiceAdapter protected constructor(context: Context) :
 
     class ViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
         @JvmField
-        var text1: TextView = itemView.findViewById(R.id.text1)
+        var text1: TextView = itemView.findViewById( R.id.text1)
         @JvmField
         var text2: TextView = itemView.findViewById(R.id.text2)
         @JvmField

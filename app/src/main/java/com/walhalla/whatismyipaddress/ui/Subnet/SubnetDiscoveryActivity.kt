@@ -691,7 +691,7 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
         super.onRestoreInstanceState(savedState)
 
         cachedWanIp = savedState.getString("wanIp")
-        binding!!.externalIpAddress.setText(cachedWanIp)
+        binding!!.externalIpAddress.text = cachedWanIp
         hosts = savedState.getSerializable("hosts") as ArrayList<Host?>?
         if (hosts != null) {
             setupHostsAdapter()
@@ -714,11 +714,11 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
             adapter!!.sortDataByIpAddressLR()
 
 
-            getBinding().ping.setText(discoverHostsStr + " (" + hosts!!.size + ")")
+            getBinding().ping.text = discoverHostsStr + " (" + hosts!!.size + ")"
             if (i.decrementAndGet() == 0) {
-                binding!!.ping.setAlpha(1f)
-                binding!!.ping.setEnabled(true)
-                binding!!.spinKit.setVisibility(View.GONE)
+                binding!!.ping.alpha = 1f
+                binding!!.ping.isEnabled = true
+                binding!!.spinKit.visibility = View.GONE
             }
         })
     }
@@ -729,7 +729,7 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
      * @param output The amount of progress to increment by
      */
     override fun processFinish(output: Int) {
-        if (scanProgressDialog != null && scanProgressDialog!!.isShowing()) {
+        if (scanProgressDialog != null && scanProgressDialog!!.isShowing) {
             scanProgressDialog!!.incrementProgressBy(output)
         }
     }

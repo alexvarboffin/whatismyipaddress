@@ -29,10 +29,10 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.druk.servicebrowser.R;
 import com.druk.servicebrowser.Utils;
 import com.druk.servicebrowser.ui.fragment.ServiceDetailFragment;
 import com.github.druk.rx2dnssd.BonjourService;
+import com.walhalla.whatismyipaddress.R;
 
 import java.net.URL;
 

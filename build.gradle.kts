@@ -20,11 +20,11 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
     //id("org.jetbrains.dokka-android")
-    id("com.google.devtools.ksp") version "2.1.0-1.0.29"
+    //id("com.google.devtools.ksp") version "2.2.21-2.0.4"
     alias(libs.plugins.google.services) apply false
     alias(libs.plugins.firebase.crashlytics) apply false
     alias(libs.plugins.android.library) apply false
-    //alias(libs.plugins.composeCompiler) apply false
+    alias(libs.plugins.ksp) apply false
 }
 //buildscript {
 //

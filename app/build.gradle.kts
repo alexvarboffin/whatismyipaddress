@@ -12,6 +12,8 @@ plugins {
     id("com.google.gms.google-services")
     kotlin("kapt")
     id("kotlin-parcelize")
+    //id("com.google.devtools.ksp")
+    alias(libs.plugins.ksp) apply false
 }
 
 android {
@@ -216,9 +218,9 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0") {
         exclude(group = "com.squareup.okhttp3")
     }
-    annotationProcessor(libs.compiler)
+    kapt(libs.compiler)
     implementation(libs.minidns.hla)
     implementation(libs.onesignal)
 
-    implementation("com.github.andriydruk:rx2dnssd:0.9.17")
+    implementation(libs.rx2dnssd)
 }

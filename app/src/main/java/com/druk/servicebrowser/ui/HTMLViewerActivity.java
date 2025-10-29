@@ -16,8 +16,6 @@ package com.druk.servicebrowser.ui;
  * limitations under the License.
  */
 
-import com.druk.servicebrowser.R;
-
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,6 +28,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
+
+import com.walhalla.whatismyipaddress.R;
 
 import java.net.URISyntaxException;
 

@@ -163,7 +163,7 @@ class MiscellaneousFragment : Fragment() {
 
         models.add(
             ToolsMenu(
-                "Bonjour Scanner",
+                "Bonjour Service Scanner aka mDNS/DNS-SD Scanner",
                 R.drawable.ic_filter_tilt_shift_black_24dp
             )
         )
@@ -178,7 +178,7 @@ class MiscellaneousFragment : Fragment() {
         recyclerView.addItemDecoration(mDividerItemDecoration)
         recyclerView.setItemAnimator(DefaultItemAnimator())
         recyclerView.setAdapter(adapter)
-        adapter.setMenuCallback(Callback2Menu { adapterPosition: Int ->
+        adapter.setMenuCallback { adapterPosition: Int ->
             when (adapterPosition) {
                 0 -> swape(SpeedTest::class.java)
                 1 -> {}
@@ -202,11 +202,10 @@ class MiscellaneousFragment : Fragment() {
                 18 -> swape(com.druk.servicebrowser.ui.MainActivity::class.java)
 
 
-
                 else -> Toast.makeText(context, "@$adapterPosition", Toast.LENGTH_SHORT)
                     .show()
             }
-        })
+        }
 
         //        AdView mAdView = view.findViewById(R.id.adView);
 //        AdRequest adRequest = new AdRequest.Builder().build();

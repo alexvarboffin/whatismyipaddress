@@ -25,13 +25,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.druk.servicebrowser.Config
-import com.druk.servicebrowser.R
+
 import com.druk.servicebrowser.ui.RegistrationsActivity.Companion.startActivity
 import com.druk.servicebrowser.ui.fragment.RegTypeBrowserFragment
 import com.druk.servicebrowser.ui.fragment.ServiceBrowserFragment
 import com.druk.servicebrowser.ui.fragment.ServiceDetailFragment.Companion.newInstance
 import com.druk.servicebrowser.ui.fragment.ServiceDetailFragment.ServiceDetailListener
 import com.github.druk.rx2dnssd.BonjourService
+import com.walhalla.whatismyipaddress.R
 import java.net.URL
 
 class MainActivity : AppCompatActivity(), ServiceBrowserFragment.ServiceListener,
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity(), ServiceBrowserFragment.ServiceListener
     }
 
     private fun updateNavigation() {
-        setTitle(domain + (if (regType != null) "   >   " + regType + (if (serviceName != null) "   >   $serviceName" else "") else ""))
+        title = domain + (if (regType != null) "   >   " + regType + (if (serviceName != null) "   >   $serviceName" else "") else "")
         if (slidingPanelLayout != null) {
             noServiceTextView!!.visibility = if (serviceName == null) View.VISIBLE else View.GONE
             serviceNameTextView!!.visibility = if (serviceName == null) View.GONE else View.VISIBLE

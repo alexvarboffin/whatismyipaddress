@@ -15,9 +15,9 @@
  */
 package com.druk.servicebrowser.ui;
 
-import com.druk.servicebrowser.R;
 import com.druk.servicebrowser.ui.fragment.ServiceBrowserFragment;
 import com.github.druk.rx2dnssd.BonjourService;
+import com.walhalla.whatismyipaddress.R;
 import com.walhalla.whatismyipaddress.TApp;
 
 import android.content.Context;

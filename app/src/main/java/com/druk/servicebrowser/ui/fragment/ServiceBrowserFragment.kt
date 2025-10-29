@@ -37,10 +37,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.druk.servicebrowser.BuildConfig
 import com.druk.servicebrowser.FavouritesManager
-import com.druk.servicebrowser.R
+
 import com.druk.servicebrowser.ui.adapter.ServiceAdapter
 import com.druk.servicebrowser.ui.viewmodel.ServiceBrowserViewModel
 import com.github.druk.rx2dnssd.BonjourService
+import com.walhalla.whatismyipaddress.R
 import com.walhalla.whatismyipaddress.TApp
 
 open class ServiceBrowserFragment : Fragment() {
@@ -190,7 +191,7 @@ open class ServiceBrowserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val rootView =
-            inflater.inflate(com.druk.servicebrowser.R.layout.fragment_service_browser, container, false) as FrameLayout
+            inflater.inflate(R.layout.fragment_service_browser, container, false) as FrameLayout
         mRecyclerView = rootView.findViewById(R.id.recycler_view)
         mProgressView = rootView.findViewById(R.id.progress)
         mErrorView = rootView.findViewById(R.id.error_container)
