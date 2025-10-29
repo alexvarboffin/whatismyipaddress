@@ -124,10 +124,10 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
         setContentView(binding!!.getRoot())
 
         getBinding().back.setOnClickListener(View.OnClickListener { view: View? -> super.onBackPressed() })
-        getBinding().title.setText(R.string.title_subnet)
+        getBinding().title.text = R.string.title_subnet
 
 
-        getBinding().ping.setText(R.string.hostDiscovery)
+        getBinding().ping.text = R.string.hostDiscovery
 
 
         discoverHostsStr = getResources().getString(R.string.hostDiscovery)
@@ -280,7 +280,7 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
         binding!!.listView.setItemAnimator(DefaultItemAnimator())
         binding!!.listView.setAdapter(adapter)
         if (!hosts!!.isEmpty()) {
-            getBinding().ping.setText(discoverHostsStr + " (" + hosts!!.size + ")")
+            getBinding().ping.text = discoverHostsStr + " (" + hosts!!.size + ")"
         }
     }
 
@@ -289,15 +289,15 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
      */
     override fun setupMac() {
         try {
-            if (!wifi!!.isEnabled()) {
+            if (!wifi!!.isEnabled) {
                 binding!!.deviceMacAddress.setText(R.string.wifiDisabled)
                 binding!!.deviceMacVendor.setText(R.string.wifiDisabled)
                 return
             }
             val mac = wifi!!.getMacAddress()
-            binding!!.deviceMacAddress.setText(mac)
+            binding!!.deviceMacAddress.text = mac
             val vendor = Host.findMacVendor(mac, db)
-            binding!!.deviceMacVendor.setText(vendor)
+            binding!!.deviceMacVendor.text = vendor
         } catch (e: UnknownHostException) {
             binding!!.deviceMacAddress.setText(R.string.noWifiConnection)
             binding!!.deviceMacVendor.setText(R.string.noWifiConnection)
@@ -360,7 +360,7 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
                 setAnimations()
 
                 hosts!!.clear()
-                getBinding().ping.setText(discoverHostsStr)
+                getBinding().ping.text = discoverHostsStr
                 adapter!!.notifyDataSetChanged()
 
                 scanProgressDialog =
@@ -741,7 +741,7 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
      */
     override fun processFinish(output: String?) {
         cachedWanIp = output
-        binding!!.externalIpAddress.setText(output)
+        binding!!.externalIpAddress.text = output
     }
 
     /**
@@ -750,11 +750,11 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
      * @param output
      */
     override fun processFinish(output: Boolean) {
-        scanHandler!!.post(Runnable {
-            if (output && scanProgressDialog != null && scanProgressDialog!!.isShowing()) {
+        scanHandler!!.post {
+            if (output && scanProgressDialog != null && scanProgressDialog!!.isShowing) {
                 scanProgressDialog!!.dismiss()
             }
-        })
+        }
     }
 
     /**
@@ -766,8 +766,8 @@ class SubnetDiscoveryActivity : AppCompatActivity(), MainAsyncResponse, OuisList
     override fun <T : Throwable?> processFinish(output: T?) {
         scanHandler!!.post(Runnable {
             Errors.showError(
-                getApplicationContext(),
-                output!!.getLocalizedMessage()
+                applicationContext,
+                output!!.localizedMessage
             )
         })
     }

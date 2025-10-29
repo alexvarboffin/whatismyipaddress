@@ -13,10 +13,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.druk.servicebrowser.ui.adapter.TxtRecordsAdapter
 import com.druk.servicebrowser.ui.viewmodel.ServiceDetailViewModel
-import com.github.druk.rx2dnssd.BonjourService
+
 import com.walhalla.whatismyipaddress.R
 import java.net.Inet4Address
 import java.net.URL
+import com.github.druk.rxdnssd.BonjourService
 
 class ServiceDetailFragment : Fragment(), View.OnClickListener {
     private var mService: BonjourService? = null

@@ -59,3 +59,11 @@ project(":shared").projectDir = File("../WalhallaUI\\shared")
 //include(":app:test")
 
 include(":extensiblepageindicator")
+
+
+include(":rx2dnssd")
+project(":rx2dnssd").projectDir = File("C:\\src\\Synced\\WIMIA\\RxDNSSD\\rx2dnssd")
+
+include(":dnssd")
+project(":dnssd").projectDir = File("C:\\src\\Synced\\WIMIA\\RxDNSSD\\dnssd")
+

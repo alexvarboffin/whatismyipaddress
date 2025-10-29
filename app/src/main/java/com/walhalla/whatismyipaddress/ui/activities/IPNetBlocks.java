@@ -132,7 +132,7 @@ public class IPNetBlocks extends BaseListActivity implements IPNetTask.View1 {
         if (TextUtils.isEmpty(var0)) {
             presenter.init();
         } else {
-            binding.ip.setText(var0);
+            binding.ip.text = var0;
         }
     }
 
@@ -166,7 +166,7 @@ public class IPNetBlocks extends BaseListActivity implements IPNetTask.View1 {
 
     @Override
     public void init(String ip, String mask9) {
-        this.mask.setText(mask9);
+        this.mask.text = mask9;
         this.binding.ip.setText(ip);
     }
 }

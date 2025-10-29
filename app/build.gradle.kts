@@ -176,7 +176,7 @@ dependencies {
     implementation(project(":library"))
     implementation(project(":threader"))
     implementation(project(":bonjour"))
-
+    implementation(project(":rx2dnssd"))
 
     implementation("com.github.delight-im:Android-AdvancedWebView:v3.2.1")
     //@@@@implementation("com.github.alexvarboffin:mint-android-app:1.5.2")
@@ -222,5 +222,9 @@ dependencies {
     implementation(libs.minidns.hla)
     implementation(libs.onesignal)
 
-    implementation(libs.rx2dnssd)
+//    implementation("com.github.discord.RxDNSSD:dnssd:v0.9.19")
+////    implementation("com.github.discord:dnssd:v0.9.19")
+////    implementation("com.github.discord:rx2dnssd:v0.9.19")
+
+
 }

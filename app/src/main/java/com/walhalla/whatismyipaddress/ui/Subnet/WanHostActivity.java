@@ -61,7 +61,7 @@ public final class WanHostActivity extends HostActivity {
 
         String lastUsedHost = UserPreference.getLastUsedHostAddress(this);
         DLog.d("@@" + lastUsedHost);
-        this.binding.hostAddress.setText(lastUsedHost);
+        this.binding.hostAddress.text = lastUsedHost;
         setupPortsAdapter();
         this.setupPortScan();
         setupAdAtBottom(binding.bottomButton);
